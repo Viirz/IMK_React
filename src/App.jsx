@@ -7,7 +7,7 @@ function App() {
     <div>
       <Header />
       <BodyAtas />
-      <h1>Selamat datang di Website React Saya!</h1>
+      <h1>Selamat datang di Website React Saya</h1>
     </div>
   );
 }
