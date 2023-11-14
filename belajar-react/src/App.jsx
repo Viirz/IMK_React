@@ -1,15 +1,28 @@
-// App.jsx
-import BodyAtas from './BodyAtas';
-import Header from './Header'; // Sesuaikan dengan lokasi file Header.jsx
+import { useState } from 'react'  
+import {Routes, Route} from "react-router-dom"
+
+import NavbarComponent from './Components/NavbarComponent'
+import FooterComponent from './Components/FooterComponent'
+
+import HomePage from './Pages/HomePage'
+import BeritaDaerah from './Pages/BeritaDaerah'
+import LayananDaerah from './Pages/LayananDaerah'
+import Dokumen from './Pages/Dokumen'
+import ProfilDaerah from './Pages/ProfilDaerah'
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <BodyAtas />
-      <h1>Selamat datang di Website React Saya!</h1>
-    </div>
-  );
+  return <div>
+    <NavbarComponent/>
+    <Routes>
+      <Route path="/home" Component={HomePage}/>
+      <Route path="/berita" Component={BeritaDaerah}/>
+      <Route path="/layanan" Component={LayananDaerah}/>
+      <Route path="/dokumen" Component={Dokumen}/>
+      <Route path="/profil" Component={ProfilDaerah}/>
+    </Routes>
+    <FooterComponent/>
+  </div>
 }
 
-export default App;
+export default App
+
