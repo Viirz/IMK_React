@@ -1,0 +1,35 @@
+/* Header.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cceff3; /* Ganti dengan warna latar belakang yang diinginkan */
+    height: 100px;
+    width: 100%;
+    padding-right: 50px;
+    position: fixed;
+}
+
+.header-button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    font-size: 22px;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Gunakan font Poppins atau font serupa */
+    font-weight: 600; /* Gaya semi-bold */
+}
+
+.header-logo {
+    width: 90px; /* Sesuaikan dengan lebar logo yang diinginkan */
+    height: auto; /* Biarkan tinggi otomatis agar proporsi tetap */
+    margin: 0 10px;
+    cursor: pointer;
+}

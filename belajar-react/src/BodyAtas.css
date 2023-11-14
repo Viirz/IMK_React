@@ -1,0 +1,51 @@
+/* BodyAtas.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bodyAtas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272343; /* Ganti dengan warna latar belakang yang diinginkan */
+  height: 620px;
+}
+
+.bodyAtas-judul1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin: 15px;
+}
+
+.bodyAtas-judul2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin: 0;
+}
+
+.bodyAtas-search-box {
+  border-radius: 50px;
+  background: #fffffe;
+  display: flex;
+  width: 700px;
+  height: 25px;
+  padding: 15px 15px 15px 22px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 100px; /* Atur jarak antara judul dan kotak pencarian */
+  font-size: 25px;
+}
