@@ -1,8 +1,11 @@
+import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
+  
+
   return (
     <div>
       <Navbar className="navBar">
