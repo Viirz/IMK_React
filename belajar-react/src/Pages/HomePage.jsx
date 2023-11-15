@@ -6,12 +6,12 @@ const HomePage = () => {
     <div>
       <header className="w-100 min-vh-100 homePage">
         <Container>
-          <div className="text-container">
-            <h1>Offisial Website</h1>
-            <h1>Kota Malang</h1>
+          <div>
+            <h1 className="judul-kesatu"> OFFICIAL WEBSITE </h1>
+            <h1 className="judul-kedua"> - KOTA MALANG - </h1>
             <div className="search-box">
               <input type="text" placeholder="Cari..." />
-              <button type="submit">Cari</button>
+              <button type="submit">🔍</button>
             </div>
           </div>
         </Container>

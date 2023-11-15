@@ -1,9 +1,18 @@
+// NavbarComponent.jsx
+
 import { useState, useEffect } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
+import PopupNavbar from "./PopupNavbar"; // Import PopupNavbar
 
 const NavbarComponent = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePopupToggle = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <div>
       <Navbar className="navBar">
@@ -23,9 +32,23 @@ const NavbarComponent = () => {
                     </div>
                   </NavLink>
                 ) : (
-                  <NavLink to={link.path} className="textLink">
-                    {link.text}
-                  </NavLink>
+                  <>
+                    {link.subTopics ? (
+                      <NavDropdown
+                        title={link.text}
+                        id={`nav-dropdown-${link.id}`}
+                        show={showPopup}
+                        onMouseEnter={handlePopupToggle}
+                        onMouseLeave={handlePopupToggle}
+                      >
+                        <PopupNavbar subTopics={link.subTopics} />
+                      </NavDropdown>
+                    ) : (
+                      <NavLink to={link.path} className="textLink">
+                        {link.text}
+                      </NavLink>
+                    )}
+                  </>
                 )}
               </div>
             ))}

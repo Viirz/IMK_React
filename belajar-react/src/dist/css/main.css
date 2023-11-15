@@ -1,14 +1,9 @@
-* {
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
-  --primary-color: white;
-  --secondary-color: red;
+  --primary-color: #f9f9f9;
+  --secondary-color: #272343;
   --color-text: black;
-  --navbar-color: blue;
-  --navbar-color-text: black;
-  --header-color: #cceff3;
+  --navbar-color: #cceff3;
+  --box-color: #ffffff;
 }
 
 .navBar {
@@ -17,7 +12,7 @@
   align-items: center;
   flex-shrink: 0;
   padding-right: 40px;
-  background-color: var(--header-color);
+  background-color: var(--navbar-color);
   height: 80px;
   width: 100%;
   position: fixed;
@@ -50,36 +45,62 @@
   border-radius: 30px;
 }
 
+/* Style HomePage */
 .homePage {
-  background-image: url("src/assets/Malang Tugu.png"); /* Ganti dengan path gambar Anda */
-  background-size: cover; /* Menutupi seluruh area dengan gambar */
-  background-position: center; /* Posisi gambar di tengah-tengah */
-  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  height: 720px;
+  display: flex;
+  background: var(--secondary-color);
+  background-image: url("src/assets/Malang Tugu 25.png");
+  background-size: cover;
+  background-position: center 65px;
   align-items: center;
+  justify-content: center;
 }
 
-/* Style HomePage */
-.text-container {
-  padding-top: 20%;
-  font-size: small;
+.judul-kesatu {
+  padding-top: 50px;
+  color: white;
   text-align: center;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+
+.judul-kedua {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  letter-spacing: 2.4px;
 }
 
 .search-box {
-  margin-top: 20px; /* Atur jarak di atas search box sesuai kebutuhan */
+  margin-top: 100px;
   text-align: center;
+  font-size: 18px;
 }
 
 .search-box input {
-  padding: 8px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  padding-left: 20px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .search-box button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  color: white;
   border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   cursor: pointer;
 }
 
