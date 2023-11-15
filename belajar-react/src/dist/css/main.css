@@ -1,62 +1,62 @@
-*{
-    font-family: "Poppins", sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-:root{
-    --primary-color : white;
-    --secondary-color : red;
-    --color-text : black;
-    --navbar-color : blue;
-    --navbar-color-text : black;
-    --header-color : #cceff3;
-
+:root {
+  --primary-color: white;
+  --secondary-color: red;
+  --color-text: black;
+  --navbar-color: blue;
+  --navbar-color-text: black;
+  --header-color: #cceff3;
 }
 
-/* Gaya CSS yang telah Anda sediakan di Header.css */
 .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--header-color);
-    height: 50px;
-    width: 100%;
-    position: sticky;
-  }
-  
-  .navBar a {
-    /* Jika Anda ingin mengganti gaya tautan di dalam Navbar */
-    margin: 0 5px;
-    padding: 8px 16px;
-    font-size: 15px;
-    color: #000000;
-    text-decoration: none; /* Menghapus garis bawah tautan */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
-  
-  /* Jika Anda ingin menyesuaikan gaya tautan saat dihover */
-  .navBar a:hover {
-    color: #ffffff; /* Ganti dengan warna yang diinginkan saat dihover */
-    background-color: #000000; /* Ganti dengan warna latar belakang yang diinginkan saat dihover */
-    border-radius: 30px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: 40px;
+  background-color: var(--header-color);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
 
-  .navBar a .active{
-    color: #ffffff; /* Ganti dengan warna yang diinginkan saat dihover */
-    background-color: #000000; /* Ganti dengan warna latar belakang yang diinginkan saat dihover */
-    border-radius: 30px;
-  }
+.navLinkItem {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
 
+.textLink {
+  padding: 8px 16px;
+  font-size: 18px;
+  color: var(--color-text);
+  text-align: center;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.textLink:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 30px;
+}
 
 .homePage {
-  background-image: url('../src/assets/taman.jpg'); /* Ganti dengan path gambar Anda */
+  background-image: url("src/assets/Malang Tugu.png"); /* Ganti dengan path gambar Anda */
   background-size: cover; /* Menutupi seluruh area dengan gambar */
   background-position: center; /* Posisi gambar di tengah-tengah */
   background-repeat: no-repeat; /* Mencegah pengulangan gambar */
   align-items: center;
 }
-  
 
 /* Style HomePage */
 .text-container {
@@ -93,9 +93,7 @@
 }
 
 .isi-berita {
-  
 }
-
 
 /* Dokumen Page */
 h2 {
@@ -123,7 +121,6 @@ h2 {
 .card-title {
   text-align: center;
 }
-
 
 /* Profil Daerah */
 .layout {

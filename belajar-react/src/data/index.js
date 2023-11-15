@@ -1,4 +1,4 @@
-import malangCityImg from "C:/Users/ACER/ProjectReact/IMK_Rino/src/assets/Malang_City.png";
+import malangCityImg from "../assets/Malang_City.png";
 import dokumenPdf from "../assets/ic_baseline-picture-as-pdf.png"
 
 export const navLinks = [
@@ -16,7 +16,7 @@ export const navLinks = [
     id: 3,
     path: "home",
     Image: malangCityImg,
-    imageSize: { width: "35px", height: "35px" },
+    imageSize: { width: "70px", height: "70px" },
   },
   {
     id: 4,
