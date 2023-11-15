@@ -1,0 +1,146 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary-color : white;
+    --secondary-color : red;
+    --color-text : black;
+    --navbar-color : blue;
+    --navbar-color-text : black;
+    --header-color : #cceff3;
+
+}
+
+/* Gaya CSS yang telah Anda sediakan di Header.css */
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-color);
+    height: 50px;
+    width: 100%;
+    position: sticky;
+  }
+  
+  .navBar a {
+    /* Jika Anda ingin mengganti gaya tautan di dalam Navbar */
+    margin: 0 5px;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none; /* Menghapus garis bawah tautan */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Jika Anda ingin menyesuaikan gaya tautan saat dihover */
+  .navBar a:hover {
+    color: #ffffff; /* Ganti dengan warna yang diinginkan saat dihover */
+    background-color: #000000; /* Ganti dengan warna latar belakang yang diinginkan saat dihover */
+    border-radius: 30px;
+  }
+
+  .navBar a .active{
+    color: #ffffff; /* Ganti dengan warna yang diinginkan saat dihover */
+    background-color: #000000; /* Ganti dengan warna latar belakang yang diinginkan saat dihover */
+    border-radius: 30px;
+  }
+
+
+
+.homePage {
+  background-image: url('../src/assets/taman.jpg'); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Menutupi seluruh area dengan gambar */
+  background-position: center; /* Posisi gambar di tengah-tengah */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  align-items: center;
+}
+  
+
+/* Style HomePage */
+.text-container {
+  padding-top: 20%;
+  font-size: small;
+  text-align: center;
+}
+
+.search-box {
+  margin-top: 20px; /* Atur jarak di atas search box sesuai kebutuhan */
+  text-align: center;
+}
+
+.search-box input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tambahkan ini ke file CSS Anda atau gunakan inline styles di komponen React Anda */
+.berita-container {
+  max-height: 300px; /* Atur tinggi maksimum kotak berita */
+  overflow-y: auto; /* Tampilkan bilah scroll jika kontennya terlalu panjang */
+  padding: 10px;
+  border: 1px solid #ddd; /* Tambahkan border atau styling lainnya sesuai kebutuhan */
+  margin-bottom: 15px; /* Atur margin antar kotak berita */
+}
+
+.isi-berita {
+  
+}
+
+
+/* Dokumen Page */
+h2 {
+  color: #800080;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 50%;
+}
+
+.card-img-top {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.card-title {
+  text-align: center;
+}
+
+
+/* Profil Daerah */
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
