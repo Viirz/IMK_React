@@ -1,21 +1,20 @@
 import React from 'react';
-import { navLinks } from '../data/index';
+import { dokumen } from '../data/index';
 
-const LayoutComponent = () => {
+function Dokumen() {
   return (
-    <div className="layout">
-      <div className="sidebar">
-        {navLinks.map((link) => (
-          <div key={link.id} className="sidebar-item">
-            {link.text}
+    <div className='navPadding'>
+      <h2>Dokumen</h2>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        {dokumen.map((item) => (
+          <div key={item.id} style={{ marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+            <img src={item.gambar} alt={item.namaDokumen} style={{ width: '100px', height: '100px', marginRight: '10px' }} />
+            <p>{item.namaDokumen}</p>
           </div>
         ))}
       </div>
-      <div className="content">
-        {/* Konten di sisi kanan akan berubah sesuai item yang dipilih di sisi kiri */}
-      </div>
     </div>
   );
-};
+}
 
-export default LayoutComponent;
+export default Dokumen;
