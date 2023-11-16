@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
-import PopupNavbar from "./PopupNavbar"; // Import PopupNavbar
+import PopupNavbar from "./PopupNavbar";
 
 const NavbarComponent = () => {
   const [showPopup, setShowPopup] = useState(false);

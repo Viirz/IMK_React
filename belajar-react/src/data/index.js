@@ -1,5 +1,5 @@
 import malangCityImg from "../assets/Malang_City.png";
-import dokumenPdf from "../assets/ic_baseline-picture-as-pdf.png"
+import dokumenPdf from "../assets/Logo PDF.png"
 
 export const navLinks = [
   {

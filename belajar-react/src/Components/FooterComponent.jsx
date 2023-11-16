@@ -1,7 +1,10 @@
+import { Container } from "react-bootstrap"
 
 const FooterComponent = () => {
   return (
-    <div>FooterComponent</div>
+    <div className="footer">
+      <text> Copyright © 2023</text>
+    </div>
   )
 }
 

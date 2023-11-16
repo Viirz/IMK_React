@@ -6,6 +6,7 @@
   --box-color: #ffffff;
 }
 
+/* Navigation Bar */
 .navBar {
   display: flex;
   justify-content: center;
@@ -104,16 +105,62 @@
   cursor: pointer;
 }
 
-/* Tambahkan ini ke file CSS Anda atau gunakan inline styles di komponen React Anda */
+.content {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.berita-content {
+  padding: 20px;
+  padding-left: 0px;
+  color: var(--color-text);
+  font-family: "Montserrat", sans-serif;
+}
+
 .berita-container {
-  max-height: 300px; /* Atur tinggi maksimum kotak berita */
-  overflow-y: auto; /* Tampilkan bilah scroll jika kontennya terlalu panjang */
-  padding: 10px;
-  border: 1px solid #ddd; /* Tambahkan border atau styling lainnya sesuai kebutuhan */
-  margin-bottom: 15px; /* Atur margin antar kotak berita */
+  height: 300px;
+  background-color: var(--box-color);
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.judul-berita {
+  height: 100px;
+  text-align: center;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .isi-berita {
+  text-align: justify;
+  margin-top: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: var(--secondary-color);
+  height: 80px;
+  width: 100%;
+}
+
+.footer text {
+  padding: 30px;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 /* Dokumen Page */

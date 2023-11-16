@@ -16,15 +16,15 @@ const HomePage = () => {
           </div>
         </Container>
       </header>
-      <div>
+      <div className="w-100 content">
         <Container>
           <div>
-            <h1>Berita Terbaru</h1>
+            <h1 className="berita-content"> Berita Terbaru </h1>
             <Row>
               {beritaTerbaru.map((item) => (
                 <Col key={item.id}>
                   <div className="berita-container">
-                    <h3>{item.judulBerita}</h3>
+                    <h3 className="judul-berita">{item.judulBerita}</h3>
                     <div className="isi-berita">{item.isiBerita}</div>
                   </div>
                 </Col>
