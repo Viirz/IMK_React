@@ -1,15 +1,18 @@
 // NavbarComponent.jsx
 
-import { useState, useEffect } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
-import { navLinks } from "../data/index";
+import { useState } from "react";
+import { Navbar, Container, Nav, Button, NavDropdown } from "react-bootstrap";
+import { navLinks, popUpNav } from "../data/index";
 import { NavLink } from "react-router-dom";
-import PopupNavbar from "./PopupNavbar";
+import PopUpComponent from "./PopUpComponent";
 
 const NavbarComponent = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [popupData, setPopupData] = useState([]);
 
-  const handlePopupToggle = () => {
+  const handlePopupToggle = (linkId) => {
+    const selectedPopupData = popUpNav.filter((popup) => popup.id === linkId);
+    setPopupData(selectedPopupData);
     setShowPopup(!showPopup);
   };
 
@@ -37,22 +40,24 @@ const NavbarComponent = () => {
                       <NavDropdown
                         title={link.text}
                         id={`nav-dropdown-${link.id}`}
-                        show={showPopup}
-                        onMouseEnter={handlePopupToggle}
-                        onMouseLeave={handlePopupToggle}
                       >
-                        <PopupNavbar subTopics={link.subTopics} />
+                        {/* Jangan lupa sesuaikan dengan komponen PopupNavbar */}
+                        <PopUpComponent data={popupData} />
                       </NavDropdown>
                     ) : (
-                      <NavLink to={link.path} className="textLink">
+                      <Button
+                        onClick={() => handlePopupToggle(link.id)}
+                        className="textLink"
+                      >
                         {link.text}
-                      </NavLink>
+                      </Button>
                     )}
                   </>
                 )}
               </div>
             ))}
           </Nav>
+          <div>{showPopup && <PopUpComponent data={popupData} />}</div>
         </Container>
       </Navbar>
     </div>

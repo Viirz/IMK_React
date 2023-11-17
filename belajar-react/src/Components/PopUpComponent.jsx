@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function PopUpComponent() {
+function PopUpComponent({ data }) {
   return (
-    <div>PopUpComponent</div>
-  )
+    <div className="popUp">
+      <h3>PopUpComponent</h3>
+      <ul>
+        {data.map((item) => (
+          <li key={item.no}>
+            <Link to={item.path}>
+              <button>{item.buttonText}</button>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default PopUpComponent
+export default PopUpComponent;

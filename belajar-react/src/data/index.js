@@ -177,20 +177,37 @@ export const popUpNav = [
 
   },
 
-
 // Menu Layanan
   {
     id : 2,
     no : 1,
     buttonText : "Kependudukan",
-    path : "kotaMalang/beritaTeknologi",
+    path : "kotaMalang/layananKependudukan",
 
   },
   {
     id : 2,
     no : 2,
     buttonText : "Kesehatan",
-    path : "kotaMalang/beritaTeknologi",
+    path : "kotaMalang/layananKesehatan",
+
+  },
+
+  // Menu Dokumen
+  {
+    id : 4,
+    no : 1,
+    buttonText : "Dokumen",
+    path : "kotaMalang/dokumen",
+
+  },
+
+// Menu Profil
+  {
+    id : 5,
+    no : 1,
+    buttonText : "Profil",
+    path : "kotaMalang/profil",
 
   },
 ]
