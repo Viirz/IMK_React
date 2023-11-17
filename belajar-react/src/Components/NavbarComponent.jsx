@@ -13,12 +13,10 @@ const NavbarComponent = () => {
   const handlePopupToggle = (linkId) => {
     const selectedPopupData = popUpNav.filter((popup) => popup.id === linkId);
 
-    // Jika user mengklik tombol yang sama dengan tombol yang saat ini membuka popup, tutup popup
     if (selectedPopupData[0] === popupData[0]) {
       setShowPopup(false);
       setPopupData([]);
     } else {
-      // Jika tidak, buka popup untuk tombol yang diklik
       setPopupData(selectedPopupData);
       setShowPopup(true);
     }
@@ -30,14 +28,13 @@ const NavbarComponent = () => {
       !event.target.closest(".textLink")
     ) {
       setShowPopup(false);
-      setPopupData([]); // Atur kembali popupData ke nilai awalnya
+      setPopupData([]);
     }
   };
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
-      // Bersihkan event listener ketika komponen dilepas
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
