@@ -1,5 +1,6 @@
 import { Container, Row, Col, NavLink } from "react-bootstrap";
 import { beritaTerbaru } from "../data/index";
+import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -74,7 +75,7 @@ const HomePage = () => {
                     <div className="berita-container">
                       <h3 className="judul-berita">{data.judulBerita}</h3>
                       <div className="isi-berita">{data.isiBerita}</div>
-                      <NavLink to={data.path}>Baca Selengkapnya</NavLink>
+                      <Link to={data.path}>Baca Selengkapnya</Link>
                     </div>
                   </SwiperSlide>
                 );

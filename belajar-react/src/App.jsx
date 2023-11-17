@@ -19,15 +19,15 @@ function App() {
     <div>
       <NavbarComponent />
       <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/beritaEkonomi" element={<BeritaDaerah_Ekonomi />} />
-        <Route path="/beritaKesehatan" element={<BeritaDaerah_Kesehatan />} />
-        <Route path="/beritaPemerintahan" element={<BeritaDaerah_Pemerintahan />}/>
-        <Route path="/beritaPendidikan" element={<BeritaDaerah_Pendidikan />} />
-        <Route path="/beritaTeknologi" element={<BeritaDaerah_Teknologi />} />
-        <Route path="/layanan" element={<LayananDaerah />} />
-        <Route path="/dokumen" element={<Dokumen />} />
-        <Route path="/profil" element={<ProfilDaerah />} />
+        <Route path="/kotaMalang" element={<HomePage />} />
+        <Route path="/kotaMalang/beritaEkonomi" element={<BeritaDaerah_Ekonomi />} />
+        <Route path="/kotaMalang/beritaKesehatan" element={<BeritaDaerah_Kesehatan />} />
+        <Route path="/kotaMalang/beritaPemerintahan" element={<BeritaDaerah_Pemerintahan />}/>
+        <Route path="/kotaMalang/beritaPendidikan" element={<BeritaDaerah_Pendidikan />} />
+        <Route path="/kotaMalang/beritaTeknologi" element={<BeritaDaerah_Teknologi />} />
+        <Route path="/kotaMalang/layanan" element={<LayananDaerah />} />
+        <Route path="/kotaMalang/dokumen" element={<Dokumen />} />
+        <Route path="/kotaMalang/profil" element={<ProfilDaerah />} />
       </Routes>
       <FooterComponent />
     </div>
