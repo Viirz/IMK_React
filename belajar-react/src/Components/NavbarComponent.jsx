@@ -12,7 +12,7 @@ const NavbarComponent = () => {
 
   const handlePopupToggle = (linkId) => {
     const selectedPopupData = popUpNav.filter((popup) => popup.id === linkId);
-  
+
     // Jika user mengklik tombol yang sama dengan tombol yang saat ini membuka popup, tutup popup
     if (selectedPopupData[0] === popupData[0]) {
       setShowPopup(false);
@@ -74,7 +74,12 @@ const NavbarComponent = () => {
         </Container>
       </Navbar>
       <Navbar className={`popUpBar ${showPopup ? "show" : "hide"}`}>
-        {showPopup && <PopUpComponent data={popupData} />}
+        {showPopup && (
+          <PopUpComponent
+            data={popupData}
+            closePopup={() => setShowPopup(false)}
+          />
+        )}
       </Navbar>
     </div>
   );
