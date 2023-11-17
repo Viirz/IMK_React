@@ -26,62 +26,48 @@ const HomePage = () => {
           </div>
         </Container>
       </header>
-      {/* <div className="w-100 content">
+      <div className="w-100 content">
         <Container>
           <div>
             <h1 className="berita-content"> Berita Terbaru </h1>
             <Row>
-              {beritaTerbaru.map((item) => (
-                <Col key={item.id}>
-                  <div className="berita-container">
-                    <h3 className="judul-berita">{item.judulBerita}</h3>
-                    <div className="isi-berita">{item.isiBerita}</div>
-                  </div>
-                </Col>
-              ))}
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{
+                  clickable: true,
+                }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 100,
+                  },
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {beritaTerbaru.map((data) => {
+                  return (
+                    <SwiperSlide key={data.id}>
+                      <div className="berita-container">
+                        <h3 className="judul-berita">{data.judulBerita}</h3>
+                        <div className="isi-berita">{data.isiBerita}</div>
+                        <Link to={data.path}>Baca Selengkapnya</Link>
+                      </div>
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
             </Row>
           </div>
-        </Container>
-      </div> */}
-      <div className="w-100 content">
-        <Container>
-          <Row>
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={10}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 100,
-                },
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              {beritaTerbaru.map((data) => {
-                return (
-                  <SwiperSlide key={data.id}>
-                    <div className="berita-container">
-                      <h3 className="judul-berita">{data.judulBerita}</h3>
-                      <div className="isi-berita">{data.isiBerita}</div>
-                      <Link to={data.path}>Baca Selengkapnya</Link>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </Row>
         </Container>
       </div>
     </div>

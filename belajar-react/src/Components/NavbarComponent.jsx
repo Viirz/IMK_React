@@ -1,6 +1,6 @@
 // NavbarComponent.jsx
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button, NavDropdown } from "react-bootstrap";
 import { navLinks, popUpNav } from "../data/index";
 import { NavLink } from "react-router-dom";
@@ -12,9 +12,35 @@ const NavbarComponent = () => {
 
   const handlePopupToggle = (linkId) => {
     const selectedPopupData = popUpNav.filter((popup) => popup.id === linkId);
-    setPopupData(selectedPopupData);
-    setShowPopup(!showPopup);
+  
+    // Jika user mengklik tombol yang sama dengan tombol yang saat ini membuka popup, tutup popup
+    if (selectedPopupData[0] === popupData[0]) {
+      setShowPopup(false);
+      setPopupData([]);
+    } else {
+      // Jika tidak, buka popup untuk tombol yang diklik
+      setPopupData(selectedPopupData);
+      setShowPopup(true);
+    }
   };
+
+  const handleClickOutside = (event) => {
+    if (
+      !event.target.closest(".popUpBar") &&
+      !event.target.closest(".textLink")
+    ) {
+      setShowPopup(false);
+      setPopupData([]); // Atur kembali popupData ke nilai awalnya
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      // Bersihkan event listener ketika komponen dilepas
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div>
@@ -35,30 +61,20 @@ const NavbarComponent = () => {
                     </div>
                   </NavLink>
                 ) : (
-                  <>
-                    {link.subTopics ? (
-                      <NavDropdown
-                        title={link.text}
-                        id={`nav-dropdown-${link.id}`}
-                      >
-                        {/* Jangan lupa sesuaikan dengan komponen PopupNavbar */}
-                        <PopUpComponent data={popupData} />
-                      </NavDropdown>
-                    ) : (
-                      <Button
-                        onClick={() => handlePopupToggle(link.id)}
-                        className="textLink"
-                      >
-                        {link.text}
-                      </Button>
-                    )}
-                  </>
+                  <h1
+                    onClick={() => handlePopupToggle(link.id)}
+                    className="textLink"
+                  >
+                    {link.text}
+                  </h1>
                 )}
               </div>
             ))}
           </Nav>
-          <div>{showPopup && <PopUpComponent data={popupData} />}</div>
         </Container>
+      </Navbar>
+      <Navbar className={`popUpBar ${showPopup ? "show" : "hide"}`}>
+        {showPopup && <PopUpComponent data={popupData} />}
       </Navbar>
     </div>
   );
