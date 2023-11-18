@@ -17,8 +17,27 @@ const BeritaDaerah_Ekonomi = () => {
 
   return (
     <div className="beritaPage">
-      <div className="sidebar">
-        <Card className="sidebar-card-berita" style={{ width: "100%" }}>
+      <div className="content-berita">
+        {selectedBerita && (
+          <Card className="content-card-berita" style={{ width: "100%" }}>
+            <Card.Body>
+              <Card.Title className="content-card-judul">
+                {selectedBerita.berita}
+              </Card.Title>
+              <Card.Text>{selectedBerita.isiberita}</Card.Text>
+            </Card.Body>
+          </Card>
+        )}
+      </div>
+      <div className="sidebar-berita">
+      <div className="search-box-berita">
+              <input type="text" placeholder="Cari..." />
+              <button type="submit">🔍</button>
+            </div>
+        <Card
+          className="sidebar-card-berita"
+          style={{ width: "100%", overflowY: "auto", maxHeight: "400px" }}
+        >
           <ListGroup variant="flush">
             {beritaEkonomi.map((item) => (
               <ListGroup.Item
@@ -33,18 +52,6 @@ const BeritaDaerah_Ekonomi = () => {
             ))}
           </ListGroup>
         </Card>
-      </div>
-      <div className="content-berita">
-        {selectedBerita && (
-          <Card className="content-card-berita" style={{ width: "100%" }}>
-            <Card.Body>
-              <Card.Title className="content-card-judul">
-                {selectedBerita.berita}
-              </Card.Title>
-              <Card.Text>{selectedBerita.isiberita}</Card.Text>
-            </Card.Body>
-          </Card>
-        )}
       </div>
     </div>
   );
