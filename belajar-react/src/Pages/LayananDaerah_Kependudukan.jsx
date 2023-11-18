@@ -10,14 +10,15 @@ function LayananDaerah_Kependudukan() {
   };
 
   return (
-    <div className="layanan-container">
+    <div className="kependudukan-container">
+      <h1>Layanan Kependudukan dan Tempat Tinggal</h1>
       {layananKependudukan.map((service, index) => (
-        <div key={service.id} className="layanan-item">
+        <div key={service.id} className="kependudukan-item">
           <button type="button" onClick={() => handleClick(index)}>
             {service.nama}
           </button>
           {activeService === index && (
-            <div className="layanan-content">
+            <div className="kependudukan-content">
               {service.Isi.map((isi, isiIndex) => (
                 <div key={isiIndex}>
                   <h3>{isi.judul}</h3>

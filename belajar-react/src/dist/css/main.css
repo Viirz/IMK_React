@@ -4,6 +4,7 @@
   --color-text: black;
   --navbar-color: #cceff3;
   --box-color: #ffffff;
+  --abu-color: #5F6C7B;
 }
 
 /* Navigation Bar */
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 70px;
+  padding-right: 60px;
   margin-bottom: 80px;
   background-color: var(--navbar-color);
   height: 80px;
@@ -248,20 +249,57 @@
   padding-left: 40px;
 }
 
-/* Footer */
-.footer {
+/* Layanan Kependudukan Page */
+.kependudukan-container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  background-color: var(--primary-color);
   display: flex;
-  background-color: var(--secondary-color);
-  height: 80px;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer text {
-  padding: 30px;
-  text-align: left;
-  color: white;
+.kependudukan-container h1 {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+}
+
+.kependudukan-item {
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.kependudukan-item button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: var(--abu-color);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.kependudukan-content {
+  margin-top: 20px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--abu-color);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
 }
 
 /* Dokumen Page */
@@ -336,5 +374,21 @@ h2 {
 .content-card-judul {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin: 15px;
+  margin: 15px; 
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: var(--secondary-color);
+  height: 80px;
+  width: 100%;
+}
+
+.footer text {
+  padding: 30px;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
