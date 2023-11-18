@@ -4,11 +4,12 @@
   --color-text: black;
   --navbar-color: #cceff3;
   --box-color: #ffffff;
-  --abu-color: #5F6C7B;
+  --abu-color: #5f6c7b;
 }
 
 /* Navigation Bar */
 .navBar {
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +53,7 @@
 
 /* Popup Bar */
 .popUpBar {
+  z-index: 1000;
   display: flex;
   text-align: left;
   flex-direction: column;
@@ -226,7 +228,6 @@
   background: var(--primary-color);
   align-items: center;
   justify-content: center;
-  position: static;
 }
 
 .sidebar-berita {
@@ -237,22 +238,18 @@
   margin-right: 30px;
   background-color: var(--secondary-color);
   border-radius: 25px;
-  position: static;
 }
 
 .sidebar-card-berita {
   padding-top: 10px;
   background-color: var(--secondary-color);
   border: none;
-  position: static;
-
 }
 
 .sidebar-item-berita {
   border: none;
   border-radius: 25px;
   font-weight: 600;
-  position: static;
 }
 
 .content-berita {
@@ -262,19 +259,16 @@
   margin-left: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
-  position: static;
 }
 
 .content-card-berita {
   border: none;
-  position: static;
 }
 
 .content-card-judul {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 15px;
-  position: static;
 }
 
 .search-box-berita {
@@ -390,7 +384,6 @@ h2 {
   background: var(--primary-color);
   align-items: center;
   justify-content: center;
-  position: static;
 }
 
 .sidebar {
@@ -401,21 +394,17 @@ h2 {
   margin-right: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
-  position: static;
 }
 
 .sidebar-card-profil {
   padding-top: 10px;
   border: none;
-  position: static;
-
 }
 
 .sidebar-item-profil {
   border: none;
   border-radius: 25px;
   font-weight: 600;
-  position: static;
 }
 
 .content-profil {
@@ -425,19 +414,16 @@ h2 {
   margin-right: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
-  position: static;
 }
 
 .content-card-profil {
   border: none;
-  position: static;
 }
 
 .content-card-judul {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 15px;
-  position: static;
 }
 
 /* Footer */
