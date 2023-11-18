@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { layananKependudukan } from "../data/index";
+import { layananKependudukan } from "../data/layanandaerah";
 
 function LayananDaerah_Kependudukan() {
   const [activeService, setActiveService] = useState(null);
@@ -34,7 +34,7 @@ function LayananDaerah_Kependudukan() {
               ))}
               <p>{service.namaDownload}</p>
               {service.downloadLink.map((download, downloadIndex) => (
-                <Link key={downloadIndex} to={download.linkDokumen}>
+                <Link key={downloadIndex} to={download.linkDokumen} target="_blank" >
                   {download.namaDokumen}
                 </Link>
               ))}

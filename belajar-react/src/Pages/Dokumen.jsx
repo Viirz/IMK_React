@@ -16,7 +16,7 @@ function Dokumen() {
               alignItems: "center",
             }}
           >
-            <Link to={item.path}>
+            <Link to={item.path} target="_blank" >
               <button>
                 <img
                   src={item.gambar}
