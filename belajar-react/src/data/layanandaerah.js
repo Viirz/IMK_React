@@ -1,4 +1,5 @@
 
+
 // Layanan Kependudukan Page
 export const layananKependudukan = [
     {
@@ -35,7 +36,7 @@ export const layananKependudukan = [
           catatan: [""],
         },
       ],
-      namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
+      namaDownload: "Formulir dapat diunduh di bawah ini:",
       downloadLink: [
         {
           namaDokumen: "F1-01 formulir biodata keluarga",
@@ -203,7 +204,7 @@ export const layananKependudukan = [
           catatan: [""],
         },
       ],
-      namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
+      namaDownload: "Formulir dapat diunduh di bawah ini:",
       downloadLink: [
         {
           namaDokumen: "Blanko F2-01 (Isian Data Kelahiran)",
@@ -384,3 +385,5 @@ export const layananKependudukan = [
       ],
     },
   ];
+
+//Layanan Daerah Kesehatan Page

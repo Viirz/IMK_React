@@ -33,11 +33,23 @@ function LayananDaerah_Kependudukan() {
                 </div>
               ))}
               <p>{service.namaDownload}</p>
-              {service.downloadLink.map((download, downloadIndex) => (
-                <Link key={downloadIndex} to={download.linkDokumen} target="_blank" >
-                  {download.namaDokumen}
-                </Link>
-              ))}
+              <ul>
+                {service.downloadLink.map(
+                  (download, downloadIndex) =>
+                    // Cek apakah download.namaDokumen tidak kosong
+                    download.namaDokumen && (
+                      <li key={downloadIndex}>
+                        <Link
+                          to={download.linkDokumen}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {download.namaDokumen}
+                        </Link>
+                      </li>
+                    )
+                )}
+              </ul>
             </div>
           )}
         </div>
