@@ -220,36 +220,86 @@
 
 /* Berita Page */
 .beritaPage {
-  padding-top: 100px;
+  padding-top: 80px;
+  height: 659px;
+  display: flex;
+  background: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  position: static;
 }
 
-.beritaKiri {
-  width: 100%;
-  height: 500px;
-}
-.beritaKiri::-webkit-scrollbar {
-  width: 10px;
-}
-
-.beritaKiri::-webkit-scrollbar-track {
-  background: #d11414;
-}
-
-.beritaKiri::-webkit-scrollbar-thumb {
-  background: #e30505;
-}
-
-.beritaKiri::-webkit-scrollbar-thumb:hover {
-  background: #d7e602;
-}
-
-.beritaKanan {
-  text-align: center;
+.sidebar-berita {
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   background-color: var(--secondary-color);
-  border-radius: 50px;
-  color: #cceff3;
-  padding-top: 40px;
-  padding-left: 40px;
+  border-radius: 25px;
+  position: static;
+}
+
+.sidebar-card-berita {
+  padding-top: 10px;
+  background-color: var(--secondary-color);
+  border: none;
+  position: static;
+
+}
+
+.sidebar-item-berita {
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  position: static;
+}
+
+.content-berita {
+  width: 70%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  background-color: var(--box-color);
+  border-radius: 25px;
+  position: static;
+}
+
+.content-card-berita {
+  border: none;
+  position: static;
+}
+
+.content-card-judul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 15px;
+  position: static;
+}
+
+.search-box-berita {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.search-box-berita input {
+  padding: 10px;
+  padding-left: 20px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.search-box-berita button {
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  color: white;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
 }
 
 /* Layanan Kependudukan Page */
@@ -355,6 +405,7 @@ h2 {
 }
 
 .sidebar-card-profil {
+  padding-top: 10px;
   border: none;
   position: static;
 
