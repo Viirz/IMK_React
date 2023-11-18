@@ -17,6 +17,7 @@ const BeritaDaerah_Teknologi = () => {
 
   return (
     <div className="beritaPage">
+      <h1>Berita Daerah Teknologi</h1>
       <div className="content-berita">
         {selectedBerita && (
           <Card className="content-card-berita" style={{ width: "100%" }}>
