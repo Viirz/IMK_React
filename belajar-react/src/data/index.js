@@ -87,7 +87,7 @@ export const layananKependudukan = [
           "Surat keterangan pengganti tanda identitas bagi penduduk rentan administrasi kependudukan",
           "Petikan keputusan presiden tentang pewarganegaraan dan berita acara pengucapan sumpah atau pernyataan janji setia bagi penduduk WNI yang semula berkewarga negaraan asing atau petikan keputusan menteri yang menyelenggarakan urusan pemerintahan bidang hukum tentang perubahan status kewarganegaraan.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PENERBITAN KK KARENA PERUBAHAN DATA",
@@ -96,7 +96,7 @@ export const layananKependudukan = [
           "KK lama",
           "Surat keterangan/bukti perubahan peristiwa kependudukan dan peristiwa penting.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PENERBITAN KK KARENA HILANG ATAU RUSAK BAGI PENDUDUK WNI",
@@ -104,7 +104,7 @@ export const layananKependudukan = [
           "Surat Keterangan hilang dari kepolisian atau KK yang rusak ",
           "KTP-Elektronik",
         ],
-        catatan: [""]
+        catatan: [""],
       },
     ],
     namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
@@ -139,7 +139,7 @@ export const layananKependudukan = [
           "Bagi penduduk yang belum berusia 17 (tujuh belas) tahun namun sudah menikah atau sudah kawin atau pernah kawin, melampirkan surat nikah/akta perkawinan",
           "Surat Pindah dalam (dalam wilayah NKRI).",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "KTP HILANG DAN RUSAK",
@@ -148,7 +148,7 @@ export const layananKependudukan = [
           "Fotocopy KK TERBITAN DUKCAPIL",
           "Membawa KTP asli untuk penggantian yang rusak.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERUBAHAN KTP YANG SALAH / DIRUBAH",
@@ -159,7 +159,7 @@ export const layananKependudukan = [
           "Fotocopy SURAT NIKAH ATAU SURAT CERAI BAGI PERUBAHAN STATUS",
           "Kartu Tanda Penduduk (KTP) asli",
         ],
-        catatan: [""]
+        catatan: [""],
       },
     ],
   },
@@ -177,7 +177,7 @@ export const layananKependudukan = [
           " Pasfoto 2x3 (2 lembar untuk anak umur diatas 5 tahun)",
           "Fotokopi Paspor dan KITAP (Untuk WNA)",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN KIA YANG HILANG",
@@ -185,7 +185,7 @@ export const layananKependudukan = [
           "Surat Keterangan Kehilangan dari kepolisian",
           "Fotokopi KK orangtua/wali",
         ],
-        catatan: [""]
+        catatan: [""],
       },
     ],
     namaDownload: "Formulir dapat diundah di bawah ini:",
@@ -210,7 +210,7 @@ export const layananKependudukan = [
           "Fotokopi KK orang tua dan/atau pelapor",
           "Surat pernyataan tanggung jawab mutlak (SPTJM) atas kebenaran data, dengan diketahui oleh dua orang saksi: 5.1. Jika tidak memiliki surat keterangan kelahiran, dan/atau 5.2. Jika tidak memiliki buku nikah/kutipan akta perkawinan tetapi status hubungan dalam KK menunjukkan sebagai suami-istri.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN KUTIPAN AKTA KELAHIRAN YANG HILANG/RUSAK",
@@ -221,7 +221,7 @@ export const layananKependudukan = [
           "Fotokopi Kutipan akta kelahiran (jika ada).",
           "Kutipan akta kelahiran yang rusak.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PERUBAHAN NAMA PADA KUTIPAN AKTA KELAHIRAN",
@@ -232,7 +232,7 @@ export const layananKependudukan = [
           "Fotokopi Kartu Keluarga.",
           "Fotokopi Dokumen perjalanan bagi orang asing.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PEMBETULAN KUTIPAN AKTA KELAHIRAN",
@@ -243,7 +243,7 @@ export const layananKependudukan = [
           "Fotokopi KK pemohon.",
           "Surat pernyataan tanggung jawab mutlak (SPTJM).",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PEMBATALAN KUTIPAN AKTA PENCATATAN SIPIL",
@@ -254,7 +254,7 @@ export const layananKependudukan = [
           "Fotokopi KK.",
           "Surat pernyataan tanggung jawab mutlak (SPTJM).",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "Formulir dapat diundah di bawah ini",
@@ -265,7 +265,7 @@ export const layananKependudukan = [
           "Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Sebagai Pasangan Suami Isteri",
           "Surat Pernyataan Tanggung Jawab Mutlak untuk Penerbitan Akta Pencatatan Sipil",
         ],
-        catatan: [""]
+        catatan: [""],
       },
     ],
     namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
@@ -315,7 +315,7 @@ export const layananKependudukan = [
         catatan: [
           "Catatan: SPTJM digunakan apabila ada ketidaksesuaian atas data permintaan pemohon.",
           "Berkas permohonan yang lengkap masukkan map berwarna hijau.",
-        ]
+        ],
       },
       {
         judul: "PERSYARATAN KUTIPAN AKTA KEMATIAN YANG HILANG/RUSAK",
@@ -326,7 +326,7 @@ export const layananKependudukan = [
           "Fotokopi Kutipan akta kematian (jika ada).",
           "Kutipan akta kematian yang rusak.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PERUBAHAN NAMA PADA KUTIPAN AKTA KEMATIAN",
@@ -337,7 +337,7 @@ export const layananKependudukan = [
           "Fotokopi Kartu Keluarga.",
           "Fotokopi Dokumen perjalanan bagi orang asing.",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PEMBETULAN KUTIPAN AKTA KEMATIAN",
@@ -348,7 +348,7 @@ export const layananKependudukan = [
           "Fotokopi KK pemohon.",
           "Surat pernyataan tanggung jawab mutu (SPTJM).",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "PERSYARATAN PEMBATALAN KUTIPAN AKTA PENCATATAN SIPIL",
@@ -359,7 +359,7 @@ export const layananKependudukan = [
           "Fotokopi KK.",
           "Surat pernyataan tanggung jawab mutu (SPTJM).",
         ],
-        catatan: [""]
+        catatan: [""],
       },
       {
         judul: "Formulir ",
@@ -368,7 +368,7 @@ export const layananKependudukan = [
           "SPTJM Peristiwa Kematian",
           "SPTJM untuk Penerbitan Akta Pencatatan Sipil",
         ],
-        catatan: [""]
+        catatan: [""],
       },
     ],
     namaDownload: "Formulir dapat diunduh di bawah ini:",
@@ -444,7 +444,7 @@ export const layananKependudukan = [
       {
         namaDokumen: "Formulir Perceraian",
         linkDokumen:
-        "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.01_Pelaporan_Pencatatan_Sipil_di_dalam_wilayah_NKRI-2.pdf"
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.01_Pelaporan_Pencatatan_Sipil_di_dalam_wilayah_NKRI-2.pdf",
       },
     ],
   },
@@ -455,24 +455,29 @@ export const beritaEkonomi = [
     id: 1,
     berita:
       "Malang Jadi Target Pasar Rokok Ilegal, Bea Cukai Intensifkan Operasi",
+    isiberita:
+      "MALANG — Bea Cukai Malang mengintensifkan Operasi Gempur Rokok Ilegal untuk mencegah meluasnya peredaran rokok ilegal di daerah tersebut. Kepala Kantor Bea Cukai Malang, Gunawan Tri Wibowo, mengatakan untuk menekan peredaran rokok ilegal dan meningkatkan penerimaan negara di bidang cukai, Bea Cukai Malang terus melakukan Operasi Gempur Rokok Ilegal.  “Pada Kamis  (2/11/2023), BC Malang berhasil menindak sebuah mobil jenis SUV yang membawa rokok ilegal tanpa dilekati pita cukai,” katanya, Jumat (3/11/2023). Penindakan ini, kata dia, dilakukan setelah mendapatkan informasi mengenai adanya pengiriman rokok ilegal yang akan dibawa ke Kabupaten Malang.  Tim Bea Cukai Malang menindaklanjutinya dengan melakukan patroli darat pada jalur distribusi rokok ilegal.",
   },
   {
     id: 2,
-    berita:
-      "Operasi Pasar Jadi Alat Utama Meredam Fluktuasi Harga di Kota Malang",
+    berita: "Akademisi Paparkan Cara Aman Kredit Dana ke Pinjol",
+    isiberita : 'MALANG — Memanfaatkan kredit dari pinjaman online itu memang bisa menjadi alternatif asalkan pemakai tahu aplikasi yang digunakan sudah dilindungi OJK serta penggunaan uang tersebut juga harus dipastikan untuk kebutuhan yang penting dan mendesak. Dosen D3 Perbankan Universitas Muhammadiyah Malang (UMM), Aep Saepuddin, mengatakan masyarakat yang mengambil pinjaman online untuk tetap waspada. Boleh-boleh saja asal tahu dan paham konsekuensi yang harus ditanggung. "Begitupun tanggung jawab untuk melunasi hutangnya tepat waktu," katanya, Kamis (16/11/2023). Pernyataannya itu menanggapi banyak kasus mencuat tentang tentang nasabah yang terlilit hutang pinjaman online belakangan ini. Menurut dia, banyak alasan yang mendorong mereka untuk menjajal pinjol, mulai dari kebutuhan mendadak, kecanduan, dan bahkan hedonisme. Aep mengatakan, dalam sudut pandang ekonomi, pinjam meminjam menjadi sah jika memenuhi syarat yang sudah ditentukan. Saat seseorang mengajukan pinjaman ke bank, di tahap awal biasanya bank akan melakukan analisis 5C (character, capacity, capital, collateral, dan condition) ke nasabahnya. Jika dirasa nasabah tidak memenuhi kriteria ini, maka bank berhak menolak ajuan pinjaman tersebut. Beda halnya dengan pinjol, kata dia, sistem yang digunakan tidak melalui analisis panjang 5C sehingga tidak perlu memakan waktu yang lama. Uang pun segera cair dan masuk ke rekening peminjam. Inilah alasan mengapa banyak masyarakat khususnya anak muda menyukai pinjaman online. "Kebanyakan kasus pinjol hari ini dilakukan oleh anak muda, alasannya beragam tapi intinya mereka tidak bisa mengontrol keuangan," kata pria yang akrab disapa Aep.'
   },
   {
     id: 3,
     berita:
-      "Penjualan Rumah Tipe Menengah-Atas di Malang Diproyeksi Tumbuh 40%",
+      "Penerimaan Pajak Kanwil DJP Jatim III Tembus Rp26,8 Triliun",
+    isiberita : 'BATU — Penerimaan pajak di lingkup Kanwil DJP Jatim III berhasil menembus Rp26,8 triliun atau 80% dari target penerimaan yang mencapai Rp33,3 triliun pada posisi Oktober 2023. Kepala Kanwil DJP Jatim III, Farid Bachtiar, mengatakan secara mtm berarti tumbuh 29,01%, yoy 5,8%, dan c to c 13,11%. “Dengan pencapaian sebesar, perlu kerja keras untuk mencapai target penerimaan sebesar Rp33,3 triliun,” katanya pada Kampanye Simpatik "Spectaxcular 2023" di Balai Among Tani, Batu, Kamis (16/11/2023). Strategi yang dipakai untuk mengejar target penerimaan pajak, kata dia, mencoba mengoptimalkan penerimaan pada lima sektor ekonomi, yakni emas, industri hasil tembakau, perikanan, pertambangan, dan perdagangan. Penerimaan terbesar, yakni dari IHT (industri hasil tembakau). Sedangkan penerimaan dari sektor lain masih relatif kecil. “Tapi kami tetap optimistis dapat ditingkatkan. Intinya, jangan yang gede aja digali, tapi semua potensi juga harus digali,” ujarnya. Kepala Bidang Penyuluhan. Pelayanan, dan Hubungan Masyarakat Kantor Wilayah DJP Jawa Timur 3, Vincentius Sukamto, menambahkan sektor IHT menjadi primadona penerimaan pajak di Kanwil DJP Jatim III. Namun untuk penerimaan pajak dari IHT, kata dia, tidak terlalu dapat diharapkan karena kinerja IHT sedang tidak baik-baiknya. Perusahaan rokok golongan II terpuruk karena berbagai alasan. “Karena harapannya pada pada empat sektor ekonomi lain dipacu penerimaannya,” ucapnya.'
   },
   {
     id: 4,
-    berita: "Kemiskinan di Kota Malang Turun Jadi 4,26% Tahun Ini",
+    berita: "Formasi Empat Pesawat Dilakukan Sebelum Dua Unit Kemudian Jatuh",
+    isiberita : 'MALANG - Kecelakaan dua pesawat tempur taktis EMB-314 Super Tucano milik Skadron Udara 21 Lanud Abd Saleh TNI Angkatan Udara di wilayah Kabupaten Pasuruan, Jawa Timur diduga akibat faktor cuaca buruk. Kepala Dinas Penerangan TNI Angkatan Udara (Kadispenau) Marsekal Pertama TNI R. Agung Sasongkojati dalam jumpa pers di Lanud Abd Saleh Malang, Jawa Timur, Kamis (16/11/2023) mengatakan bahwa akibat kondisi cuaca buruk menyebabkan pilot tidak memiliki jarak pandang maksimal. "Sehingga ini murni akibat cuaca kelihatannya, namun, saya belum bisa memastikan karena harus ada penyelidikan lebih lanjut," kata Agung dilansir Antara. Agung menjelaskan, ada empat pesawat yang melakukan sesi latihan formasi rutin dalam penerbangan tersebut. Keempat pesawat itu, bergabung dalam sebuah formasi, dan kemudian terjadi cuaca buruk. Menurutnya, pesawat saat melintas dalam kondisi cuaca buruk tersebut melakukan manuver untuk melepaskan diri. Namun, pada saat melakukan manuver tersebut, terjadi hilang kontak pada pesawat dengan nomor ekor TT-3111 dan TT-3103. "Dua pesawat lain berusaha naik dan ke luar dari awan. Pada saat itu dilakukan kontak, tidak bisa menghubungi. Dan setelah dua pesawat mendarat, mendapat laporan dari aparat teritorial bahwa ada pesawat terjatuh di Kabupaten Pasuruan," katanya.'
   },
   {
     id: 5,
-    berita: "Kemiskinan di Kota Malang Turun Jadi 4,26% Tahun Ini",
+    berita: "KAI Cek Kondisi Jalur Gubeng ke Malang Jelang Nataru",
+    isiberita: 'MALANG - PT Kereta Api Indonesia (Persero) Daerah Operasi (Daop) 8 Surabaya melakukan pengecekan jalur Surabaya Gubeng menuju Malang menjelang datangnya libur Natal dan Tahun Baru 2024 serta antisipasi musim hujan. Manager Humas KAI Daop 8 Surabaya Luqman Arif di Kota Malang, Jawa Timur, Rabu (15/11/2023) mengatakan bahwa pengecekan tersebut bertujuan untuk menjaga keselamatan dan kelancaran perjalan kereta api menghadapi musim hujan dan menyambut Natal serta Tahun Baru 2024. "KAI Daop 8 Surabaya akan berusaha semaksimal mungkin untuk mewujudkan perjalanan kereta api yang selamat, aman, dan nyaman bagi pelanggannya," kata Luqman.​​​​​​​Luqman menjelaskan, pada pelaksanaan cek lintas operasional tersebut, KAI Daop 8 Surabaya memastikan satu titik yang masuk dalam daerah pantauan khusus yang berpotensi mengganggu operasional kereta api. Titik tersebut berada di Bangunan Hidmat atau jembatan Nomor 248, antara Stasiun Malang dengan Stasiun Malang Kotalama, yang memiliki potensi terjadi hidrolika, yaitu derasnya arus sungai saat musim hujan. Dalam upaya mengantisipasi potensi yang bisa mengganggu kelancaran perjalanan kereta api tersebut, lanjutnya, KAI Daop 8 Surabaya telah menempatkan AMUS yang merupakan alat bantu darurat berupa karung, bantalan kayu dan beton. Kemudian, pasir, balas, rel cadangan, penambat, plat sambung, perancah, lampu dan generator, terpal, alat potong dan sejumlah peralatan pendukung lainnya. Selain itu, Daop 8 Surabaya juga akan menyiapkan petugas khusus di lokasi tersebut.'
   },
 ];
 
