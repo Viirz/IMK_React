@@ -60,6 +60,9 @@
   margin-top: 80px;
   padding-bottom: 20px;
   background-color: var(--navbar-color);
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: var(--secondary-color);
   height: 150px;
   width: 100%;
   position: fixed;
@@ -336,7 +339,9 @@ h2 {
   display: flex;
   background: var(--primary-color);
   align-items: center;
-  justify-content: center;}
+  justify-content: center;
+  position: static;
+}
 
 .sidebar {
   width: 30%;
@@ -346,16 +351,20 @@ h2 {
   margin-right: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
+  position: static;
 }
 
 .sidebar-card-profil {
   border: none;
+  position: static;
+
 }
 
 .sidebar-item-profil {
   border: none;
   border-radius: 25px;
   font-weight: 600;
+  position: static;
 }
 
 .content-profil {
@@ -365,16 +374,19 @@ h2 {
   margin-right: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
+  position: static;
 }
 
 .content-card-profil {
   border: none;
+  position: static;
 }
 
 .content-card-judul {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin: 15px; 
+  margin: 15px;
+  position: static;
 }
 
 /* Footer */
