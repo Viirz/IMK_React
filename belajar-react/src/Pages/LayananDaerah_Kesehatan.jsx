@@ -1,13 +1,44 @@
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { layananKesehatan } from "../data/layanandaerah";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
-function LayananDaerahKesehatan() {
+import { layananKesehatan } from "../data/layanandaerah";
+import KesehatanComponent from "../Components/KesehatanComponent";
+
+function LayananDaerah_Kesehatan() {
+  const defaultPopupData = layananKesehatan.filter((item) => item.id === 1);
+  const [showPopup, setShowPopup] = useState(true);
+  const [popupData, setPopupData] = useState(defaultPopupData);
+
+  const handlePopupToggle = (itemId) => {
+    console.log(itemId)
+    const selectedPopupData = layananKesehatan.filter(
+      (item) => item.id === itemId
+    );
+      
+    setPopupData(selectedPopupData);
+    setShowPopup(true);
+  };
+
+  // const handleClickOutside = (event) => {
+  //   if (
+  //     !event.target.closest(".popUpBar") &&
+  //     !event.target.closest(".textLink")
+  //   ) {
+  //     setShowPopup(false);
+  //     setPopupData([]);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   document.addEventListener("click", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <div>
@@ -19,7 +50,7 @@ function LayananDaerahKesehatan() {
         loop={true}
         pagination={{
           clickable: true,
-          type: "bullets", // menampilkan titik-titik sebagai indikator halaman
+          type: "bullets",
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
@@ -27,13 +58,19 @@ function LayananDaerahKesehatan() {
       >
         {layananKesehatan.map((item) => (
           <SwiperSlide key={item.id}>
-            <div style={{ position: "relative" }}>
+            <div style={{ position: "relative", background: "black" }}>
               <img
                 src={item.gambar}
                 alt={item.nama}
-                style={{ width: "100%" }}
+                style={{ width: "100%", cursor: "pointer" }}
+                onClick={() => {
+                  handlePopupToggle(item.id);
+                  console.log(item.id); // Pindahkan console.log ke dalam fungsi handlePopupToggle
+                }}
               />
+
               <div
+                onClick={() => handlePopupToggle(item.id)}
                 style={{
                   position: "absolute",
                   bottom: 0,
@@ -49,8 +86,14 @@ function LayananDaerahKesehatan() {
           </SwiperSlide>
         ))}
       </Swiper>
+      {showPopup && (
+        <KesehatanComponent
+          data={popupData}
+          closePopup={() => setShowPopup(false)}
+        />
+      )}
     </div>
   );
 }
 
-export default LayananDaerahKesehatan;
+export default LayananDaerah_Kesehatan;

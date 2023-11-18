@@ -4,41 +4,21 @@ import gambarLavalette from "../assets/RSU_Lavalette.png"
 import gambarMuhamadiyah from "../assets/RSU_Muhammadiyah_Malang.png"
 import gambarSA from "../assets/RSUD_Dr_Saiful_Anwar.png"
 
+
+import tiktok from "../assets/Tiktok_Icon.png"
+import youtube from "../assets/Youtube_Icon.png"
+import twiter from "../assets/Twiter_Icon.png"
+import facebook from "../assets/Facebook_Icon.png"
+import instagram from "../assets/Instagram_Icon.png"
+
 //Layanan Daerah Kesehatan Page
 export const layananKesehatan=[
   {
     id : 1,
-    gambar : gambarPersada,
-    nama : "RS Persada"
-  },
-  {
-    id : 2,
-    gambar : gambarMWP,
-    nama : "RSIA Mardi Waloeja Rampal "
-  },
-  {
-    id : 3,
-    gambar : gambarLavalette,
-    nama : "RSU Lavalette"
-  },
-  {
-    id : 4,
-    gambar : gambarMuhamadiyah,
-    nama : "RSU Muhammadiyah Malang"
-  },
-  {
-    id : 5,
     gambar : gambarSA,
-    nama : "RSUD Dr Saiful Anwar"
-  },
-]
-
-//Kesehatan PopUp
-export const kesehatanPopup = [
-  {
-    id : 1,
+    nama : "RSUD Dr Saiful Anwar",
     judul : "RSUD Dr. Saiful Anwar",
-    jam : ["Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    jam : ["Senin - Kamis  (07.00 - 13.30)", "Jumat (07.00 - 11.00)"],
     tarif : "UMUM, BPJS, SKTM",
     alamatWebsite : "https://rsusaifulanwar.jatimprov.go.id/",
     alamat : "Alamat: Jl. Jaksa Agung Suprapto No.2, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65112.",
@@ -46,79 +26,130 @@ export const kesehatanPopup = [
     email : "staf-rsu-drsaifulanwar@jatimprov.go.id",
     sosialMedia : [
       {
-        gambar : "",
-        nama : "rssaifulanwar",
+        logo : instagram,
+        user : "rssaifulanwar",
       },
       {
-        gambar : "",
-        nama : "rsud dr.Saiful Anwar",
+        logo : facebook,
+        user : "rsud dr.Saiful Anwar",
       },
       {
-        gambar : "",
-        nama : "@rsudsaifulanwar",
+        logo : twiter,
+        user : "@rsudsaifulanwar",
       }
     ]
   },
   {
     id : 2,
-    judul : "",
-    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
-    tarif : [],
-    alamatWebsite : [],
-    alamat : [],
-    telepon : [],
-    email : [],
+    gambar : gambarLavalette,
+    nama : "RSU Lavalette",
+    judul : "RSU  Lavalette",
+    jam : ["Senin - Sabtu   (07.00 - 21.00)"],
+    tarif : "UMUM, BPJS,",
+    alamatWebsite : "https://lavalettehospital.com/",
+    alamat : " Jl. Wr Supratman No. 10, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111.",
+    telepon : "(0341) 470805",
+    email : "rslavalette.nsm@gmail.com",
     sosialMedia : [
       {
+        logo : instagram,
+        user : "ihc_rslavalette"
+        
+      },
+      {
+        logo : facebook,
+        user : "Rumah Sakit Lavalette"
+        
+      },
+      {
+        logo : youtube,
+        user : "Rumah Sakit Lavalette"
         
       }
     ]
   },
   {
     id : 3,
-    judul : "",
-    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
-    tarif : [],
-    alamatWebsite : [],
-    alamat : [],
-    telepon : [],
-    email : [],
+    gambar : gambarMuhamadiyah,
+    nama : "RSU Muhammadiyah Malang",
+    judul : "RS Universitas  Muhammadiyah Malang",
+    jam : ["Senin - Minggu   (00.00-23.59)"],
+    tarif : "UMUM, BPJS",
+    alamatWebsite : "https://ummhospital.com/",
+    alamat : "Alamat: Jl. Raya Ngelo Tlogomas No.45, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144.",
+    telepon : "(0341)-561666",
+    email : "hospital@umm.ac.id",
     sosialMedia : [
       {
-        
+        logo : instagram,
+        user : "Ummhospital"
+      },
+      {
+        logo : facebook,
+        user : "Hospital.Umm"
+      },
+      {
+        logo: youtube,
+        user : "UMM Hospital"
+      },
+      {
+        logo : twiter,
+        user : "@Ummhospital"
       }
     ]
   },
   {
     id : 4,
-    judul : "",
-    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
-    tarif : [],
-    alamatWebsite : [],
-    alamat : [],
-    telepon : [],
-    email : [],
+    gambar : gambarMWP,
+    nama : "RSIA Mardi Waloeja Rampal ",
+    judul : "RSIA Mardi Waloeja Rampal",
+    jam : ["Senin - Sabtu   (07.00 - 20.00)"],
+    tarif : "UMUM, BPJS",
+    alamatWebsite : "https://rsiamawar.com/",
+    alamat : "Jl. Wr. Supratman 1, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+    telepon : "(0341)-364756",
+    email : "rsia.mardiwaloeja.rampal@gmail.com",
     sosialMedia : [
       {
-        
+        logo : instagram,
+        user : "rsiamawarmalang"
+      },
+      {
+        logo : tiktok,
+        user : "rsiamawarmalang"
       }
     ]
   },
   {
     id : 5,
-    judul : "",
-    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
-    tarif : [],
-    alamatWebsite : [],
-    alamat : [],
-    telepon : [],
-    email : [],
+    gambar : gambarPersada,
+    nama : "RS Persada",
+    judul : "RS Persada",
+    jam : ["Senin - Sabtu (07.00 - 21.00)"],
+    tarif : "UMUM, BPJS",
+    alamatWebsite : "https://persadahospital.co.id/",
+    alamat : "Kompleks Araya Business Center Kav. II-IV, Jl. Panji Suroso, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65126",
+    telepon : "(0341) 299633",
+    email : "info@persadahospital.co.id ",
     sosialMedia : [
       {
-        
+        logo : instagram,
+        user : "persada_hospital"
+      },
+      {
+        logo : facebook,
+        user : "Info Persada Hospital"
+      },
+      {
+        logo : youtube,
+        user : "Persada Hospital TV"
+      },
+      {
+        logo : twiter,
+        user : "@PersadaHospital"
       }
     ]
-  }
+  },
 ]
 
 
