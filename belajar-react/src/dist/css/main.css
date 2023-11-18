@@ -361,31 +361,80 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Layanan Kesehatan Page */
+
 /* Dokumen Page */
-h2 {
-  color: #800080;
+.dokumen {
+  padding-top: 80px;
+}
+
+.dokumen a {
+  text-decoration: none;
+}
+
+.search-box-dokumen {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  margin-top: 100px;
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-.list-group-item {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.search-box-dokumen input {
+  padding: 10px;
+  padding-left: 20px;
+  border-right: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
-.card {
-  width: 50%;
+.search-box-dokumen button {
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  color: white;
+  border-left: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
 }
 
-.card-img-top {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto;
+.dokumen h2 {
+  margin-left: 70px;
+  padding: 30px;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
-.card-title {
-  text-align: center;
+.dokumen-frame {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  align-items: center;
+}
+
+.dokumen-button {
+  margin-top: 20px;
+  padding: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: var(--box-color);
+  border-radius: 25px;
+  width: 100%;
+  align-items: center;
+}
+
+.dokumen-button p {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 /* Profil Daerah */
