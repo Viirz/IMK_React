@@ -1,4 +1,38 @@
+import gambarPersada from "../assets/RS_Persada.png"
+import gambarMWP from "../assets/RSIA_Mardi_Waloeja_Rampal.png"
+import gambarLavalette from "../assets/RSU_Lavalette.png"
+import gambarMuhamadiyah from "../assets/RSU_Muhammadiyah_Malang.png"
+import gambarSA from "../assets/RSUD_Dr_Saiful_Anwar.png"
 
+//Layanan Daerah Kesehatan Page
+export const layananKesehatan=[
+  {
+    id : 1,
+    gambar : gambarPersada,
+    nama : "RS Persada"
+  },
+  {
+    id : 2,
+    gambar : gambarMWP,
+    nama : "RSIA Mardi Waloeja Rampal "
+  },
+  {
+    id : 3,
+    gambar : gambarLavalette,
+    nama : "RSU Lavalette"
+  },
+  {
+    id : 4,
+    gambar : gambarMuhamadiyah,
+    nama : "RSU Muhammadiyah Malang"
+  },
+  {
+    id : 5,
+    gambar : gambarSA,
+    nama : "RSUD Dr Saiful Anwar"
+  },
+
+]
 
 // Layanan Kependudukan Page
 export const layananKependudukan = [
@@ -386,4 +420,3 @@ export const layananKependudukan = [
     },
   ];
 
-//Layanan Daerah Kesehatan Page
