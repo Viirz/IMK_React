@@ -49,7 +49,7 @@ export const beritaTerbaru = [
   },
   {
     id: 3,
-    path: "beritaPemerintahan",
+    path: "beritaPendidikan",
     judulBerita:
       "Pendidikan Kota Malang Dapat Dana Alokasi Khusus 223,8 M Dari Kemendikbud Ristek.",
     isiBerita:
@@ -57,7 +57,7 @@ export const beritaTerbaru = [
   },
   {
     id: 4,
-    path: "beritaPendidikan",
+    path: "beritaPemerintahan",
     judulBerita:
       "Penyesuaian Target PAD 2024, Ini Penjelasan Pj Wali Kota Malang",
     isiBerita:
@@ -569,10 +569,9 @@ export const beritaPemerintahan = [
 export const beritaPendidikan = [
   {
     id: 1,
-    berita:
-      "Tanamkan Jiwa Tanggap Bencana Sejak Dini, Kel. Tunjungsekar Gelar Pelatihan Tanggap Bencana Untuk Anak",
+    berita: "Pendidikan Kota Malang Dapat Dana Alokasi Khusus 223,8 M Dari Kemendikbud Ristek.",
     isiberita:
-    'Lowokwaru (malangkota.go.id) – Dalam rangka menanamkan pengetahuan kebencanaan sejak dini, Kelurahan Tunjungsekar menggelar kegiatan Sosialisasi dan Pelatihan Tanggap Bencana bagi Anak-Anak di wilayah Kelurahan Tunjungsekar di Aula Serba Guna Kantor Kelurahan Tunjungsekar, Kamis (16/11/2023). Lurah Tunjungsekar Subhan Effendi, ST menyebutkan kegiatan yang diikuti oleh 79 siswa pendidikan anak usia dini (PAUD) ini dilakukan sebagai upaya untuk menanamkan sikap tanggap bencana sejak dini kepada anak-anak di wilayah Tunjungsekar. “Dengan kegiatan ini, diharapkan nantinya anak-anak ini mengerti apa yang harus dilakukan ketika bencana gempa terjadi,” jelasnya. Menambahkan, Kepala Bidang Pencegahan dan Kesiapsiagaan Badan Penanggulangan Bencana Daerah (BPBD) Kota Malang Dra. Khabibah, MM mengatakan bahwa tujuan kegiatan ini adalah untuk melatih anak-anak terkait dengan kesiapsiagaan bencana terutama gempa bumi. Hal ini mengingat bencana gempa bumi cukup sering terjadi di wilayah Malang sehingga anak-anak perlu dibekali dengan pengetahuan untuk mengantisipasinya. “Kami dari BPBD memang sering mendapat undangan terkait antisipasi dan penanggulangan bencana. Tujuannya agar pengetahuan akan antisipasi bencana ini bisa dimiliki oleh masyarakat secara luas, tak terkecuali anak-anak,” ujar Khabibah. Khabibah berharap agar semua pihak bisa memiliki pengetahuan dasar akan hal-hal apa yang seharusnya dilakukan sebelum, saat, dan setelah bencana terjadi. Hal ini untuk meminimalisir dampak yang mungkin diakibatkan oleh terjadinya bencana itu sendiri. “Harapannya semua lapisan masyarakat, mulai dari anak-anak hingga orang tua memiliki pemahaman tentang bagaimana mengatasi adanya bencana yang mungkin terjadi sehingga mampu menanggulanginya,” tutupnya. (iu/yon)'
+    'Pemerintah melalui Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) mengalokasikan Dana Alokasi Khusus (DAK) sebesar Rp223,835 miliar untuk pembangunan pendidikan di kota Malang pada Tahun Anggaran 2023. "Alokasi tersebut terdiri atas Rp5,457 miliar DAK Fisik dan Rp218,377 miliar DAK Nonfisik," disampaikan Pelaksana Tugas Direktur Kepala Sekolah, Pengawas Sekolah, dan Tenaga Kependidikan (Plt. Dir. KSPSTK) Kemendikbudristek, Kasiman, dalam kegiatan Kunjungan Kerja Masa Reses Komisi X Dewan Perwakilan Rakyat Republik Indonesia (DPR RI) di Kantor Wali Kota Malang, Rabu (4/10). Lebih lanjut, Kasiman menjelaskan Kemendikburistek berharap alokasi tersebut dapat dioptimalkan untuk mendukung penyelenggaraan program-program prioritas nasional bidang pendidikan, di antaranya Program Sekolah Penggerak, Implementasi Kurikulum Merdeka, Asesmen Nasional, Pemajuan Kebudayaan, dan lain-lain. Adapun alokasi DAK Nonfisik Pendidikan untuk Kota Malang dialokasikan untuk Bantuan Operasional Satuan Pendidikan, Tunjangan Guru, serta Bantuan Operasional untuk Penyelenggaraan Museum dan Cagar Budaya. Sebagaimana diketahui bersama, DAK merupakan dana yang bersumber dari pendapatan APBN yang dialokasikan kepada Daerah tertentu dengan tujuan untuk membantu mendanai kegiatan khusus yang merupakan urusan Daerah dan sesuai dengan prioritas nasional. Dalam sambutannya, Ketua Rombongan Komisi X DPR RI, Hasanudin Wahid, mengungkapkan kunjungan kerja ke Kota Malang di masa reses bertujuan untuk menyerap gagasan dan aspirasi pemangku kepentingan bidang pendidikan, kebudayaan, ekonomi kreatif, kepemudaan dan olahraga, serta arsip dan perpustakaan. "Kami melakukan pengawasan program-program pemerintah yang dilaksanakan di Kota Malang. Terutama terkait peraturan perundang-undangan, kemudian tentu saja untuk anggaran, dan sebagainya. Kami datang kali ini dalam rangka menyerap seluruh aspirasi, gagasan, usulan-usulan dari masyarakat Kota Malang," katanya.'
   },
   {
     id: 2,
@@ -594,19 +593,21 @@ export const beritaPendidikan = [
   },
   {
     id: 5,
-    berita: "Pendidikan Kota Malang Dapat Dana Alokasi Khusus 223,8 M Dari Kemendikbud Ristek.",
+    berita:
+      "Tanamkan Jiwa Tanggap Bencana Sejak Dini, Kel. Tunjungsekar Gelar Pelatihan Tanggap Bencana Untuk Anak",
     isiberita:
-    'Pemerintah melalui Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) mengalokasikan Dana Alokasi Khusus (DAK) sebesar Rp223,835 miliar untuk pembangunan pendidikan di kota Malang pada Tahun Anggaran 2023. "Alokasi tersebut terdiri atas Rp5,457 miliar DAK Fisik dan Rp218,377 miliar DAK Nonfisik," disampaikan Pelaksana Tugas Direktur Kepala Sekolah, Pengawas Sekolah, dan Tenaga Kependidikan (Plt. Dir. KSPSTK) Kemendikbudristek, Kasiman, dalam kegiatan Kunjungan Kerja Masa Reses Komisi X Dewan Perwakilan Rakyat Republik Indonesia (DPR RI) di Kantor Wali Kota Malang, Rabu (4/10). Lebih lanjut, Kasiman menjelaskan Kemendikburistek berharap alokasi tersebut dapat dioptimalkan untuk mendukung penyelenggaraan program-program prioritas nasional bidang pendidikan, di antaranya Program Sekolah Penggerak, Implementasi Kurikulum Merdeka, Asesmen Nasional, Pemajuan Kebudayaan, dan lain-lain. Adapun alokasi DAK Nonfisik Pendidikan untuk Kota Malang dialokasikan untuk Bantuan Operasional Satuan Pendidikan, Tunjangan Guru, serta Bantuan Operasional untuk Penyelenggaraan Museum dan Cagar Budaya. Sebagaimana diketahui bersama, DAK merupakan dana yang bersumber dari pendapatan APBN yang dialokasikan kepada Daerah tertentu dengan tujuan untuk membantu mendanai kegiatan khusus yang merupakan urusan Daerah dan sesuai dengan prioritas nasional. Dalam sambutannya, Ketua Rombongan Komisi X DPR RI, Hasanudin Wahid, mengungkapkan kunjungan kerja ke Kota Malang di masa reses bertujuan untuk menyerap gagasan dan aspirasi pemangku kepentingan bidang pendidikan, kebudayaan, ekonomi kreatif, kepemudaan dan olahraga, serta arsip dan perpustakaan. "Kami melakukan pengawasan program-program pemerintah yang dilaksanakan di Kota Malang. Terutama terkait peraturan perundang-undangan, kemudian tentu saja untuk anggaran, dan sebagainya. Kami datang kali ini dalam rangka menyerap seluruh aspirasi, gagasan, usulan-usulan dari masyarakat Kota Malang," katanya.'
+    'Lowokwaru (malangkota.go.id) – Dalam rangka menanamkan pengetahuan kebencanaan sejak dini, Kelurahan Tunjungsekar menggelar kegiatan Sosialisasi dan Pelatihan Tanggap Bencana bagi Anak-Anak di wilayah Kelurahan Tunjungsekar di Aula Serba Guna Kantor Kelurahan Tunjungsekar, Kamis (16/11/2023). Lurah Tunjungsekar Subhan Effendi, ST menyebutkan kegiatan yang diikuti oleh 79 siswa pendidikan anak usia dini (PAUD) ini dilakukan sebagai upaya untuk menanamkan sikap tanggap bencana sejak dini kepada anak-anak di wilayah Tunjungsekar. “Dengan kegiatan ini, diharapkan nantinya anak-anak ini mengerti apa yang harus dilakukan ketika bencana gempa terjadi,” jelasnya. Menambahkan, Kepala Bidang Pencegahan dan Kesiapsiagaan Badan Penanggulangan Bencana Daerah (BPBD) Kota Malang Dra. Khabibah, MM mengatakan bahwa tujuan kegiatan ini adalah untuk melatih anak-anak terkait dengan kesiapsiagaan bencana terutama gempa bumi. Hal ini mengingat bencana gempa bumi cukup sering terjadi di wilayah Malang sehingga anak-anak perlu dibekali dengan pengetahuan untuk mengantisipasinya. “Kami dari BPBD memang sering mendapat undangan terkait antisipasi dan penanggulangan bencana. Tujuannya agar pengetahuan akan antisipasi bencana ini bisa dimiliki oleh masyarakat secara luas, tak terkecuali anak-anak,” ujar Khabibah. Khabibah berharap agar semua pihak bisa memiliki pengetahuan dasar akan hal-hal apa yang seharusnya dilakukan sebelum, saat, dan setelah bencana terjadi. Hal ini untuk meminimalisir dampak yang mungkin diakibatkan oleh terjadinya bencana itu sendiri. “Harapannya semua lapisan masyarakat, mulai dari anak-anak hingga orang tua memiliki pemahaman tentang bagaimana mengatasi adanya bencana yang mungkin terjadi sehingga mampu menanggulanginya,” tutupnya. (iu/yon)'
   },
+  
 ];
 
 export const beritaTeknologi = [
   {
     id: 1,
     berita:
-      "Penyesuaian Target PAD 2024, Ini Penjelasan Pj Wali Kota Malang",
+      "Kota Malang siap turut wujudkan 1000 startup digital.",
     isiberita:
-    'Klojen (malangkota.go.id) – Dalam Rapat Paripurna DPRD Kota Malang yang digelar pada Jumat (3/11/2023) di Ruang Rapat Paripurna DPRD Kota Malang, target Pendapatan Asli Daerah (PAD) Kota Malang tahun 2024 mengalami penyesuaian. Dari target awal sebesar Rp1,2 triliun menjadi Rp800 miliar atau turun sekitar Rp 400 miliar. Perubahan ini mengacu kepada UU No 33 tahun 2004 tentang Perimbangan Keuangan Antara Pemerintah Pusat dan Pemerintah Daerah. Dari aturan ini, beberapa poin direvisi oleh Kementerian Keuangan dan sampai saat ini Kota Malang belum memiliki peraturan daerah (perda) perpajakan sebagai turunan dari kebijakan tersebut. Pernyataan itu disampaikan Penjabat (Pj) Wali Kota Malang Dr. Ir. Wahyu Hidayat, MM usai mengikuti rapat paripurna. Dari kondisi itu, dikatakannya sejumlah potensi pendapatan pajak tidak bisa dioptimalkan, seperti pajak kos atau rumah sewa yang diprediksi akan ditiadakan. Selain itu, peningkatan tarif pajak Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) tidak bisa dilakukan. Menyikapi hal ini Pemkot Malang akan mengoptimalkan potensi pajak lain, seperti pajak hotel, restoran, reklame dan parkir.'
+    'Di tahun 2045, Indonesia juga akan diprediksi menjadi empat negara raksasa di dunia. Maka dari itu mulai sekarang penataan yang baik di semua bidang harus dilakukan. Seperti halnya perekonomian yang kuat dan sumber daya manusia yang berdaya saing. Beberapa hal itu ditekankan Wali Kota Malang Drs. H. Sutiaji dalam Roadshow Gerakan Nasional 1000 Startup Digital yang mengangkat tema ‘Sinergitas Pentahelix Dalam Peningkatan Inovasi Startup Digital Jawa Timur di Gedung Malang Creative Center (MCC), Kamis (25/05/2023). Pria berkacamata itu menegaskan bahwa pertumbuhan ekonomi kreatif di Kota Malang sangat baik. “Pada tahun 2022 (pertumbuhan ekraf) sebesar 4,7 persen, saat ini sudah di atas 10 persen. Begitu juga para pelakunya, dari 87 pelaku ekonomi kreatif, saat ini sudah 200 lebih. Capaian ini dikarenakan berbagai kemudahan dan sarana prasarana yang memadai. Seperti halnya keberadaan MCC ini,” jelasnya. Sebagai bentuk kontribusi untuk terwujudnya Gerakan Nasional 1000 Startup Digital, diungkapkannya bahwa saat ini di Kota Malang ada 63 perguruan tinggi yang memiliki jurusan teknologi informatika. 16 diantaranya telah menjalin kerja sama dengan Pemerintah Kota (Pemkot) Malang untuk membuat kurikulum aplikasi dan game.'
   },
   {
     id: 2,
