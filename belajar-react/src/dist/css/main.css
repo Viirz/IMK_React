@@ -230,6 +230,16 @@
   justify-content: center;
 }
 
+.beritaPage h1 {
+  position: absolute;
+  top: 105px;
+  left: 75px;
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
 .sidebar-berita {
   width: 30%;
   padding-left: 30px;
@@ -254,11 +264,13 @@
 
 .content-berita {
   width: 70%;
+  max-height: 430px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 30px;
   background-color: var(--box-color);
   border-radius: 25px;
+  overflow: auto;
 }
 
 .content-card-berita {
