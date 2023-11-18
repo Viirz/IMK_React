@@ -20,16 +20,16 @@ function App() {
     <div>
       <NavbarComponent />
       <Routes>
-        <Route path="/kotaMalang" element={<HomePage />} />
-        <Route path="/kotaMalang/beritaEkonomi" element={<BeritaDaerah_Ekonomi />} />
-        <Route path="/kotaMalang/beritaKesehatan" element={<BeritaDaerah_Kesehatan />} />
-        <Route path="/kotaMalang/beritaPemerintahan" element={<BeritaDaerah_Pemerintahan />}/>
-        <Route path="/kotaMalang/beritaPendidikan" element={<BeritaDaerah_Pendidikan />} />
-        <Route path="/kotaMalang/beritaTeknologi" element={<BeritaDaerah_Teknologi />} />
-        <Route path="/kotaMalang/layananKependudukan" element={<LayananDaerah_Kependudukan />} />
-        <Route path="/kotaMalang/layananKesehatan" element={<LayananDaerah_Kesehatan />} />
-        <Route path="/kotaMalang/dokumen" element={<Dokumen />} />
-        <Route path="/kotaMalang/profil" element={<ProfilDaerah />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/beritaEkonomi" element={<BeritaDaerah_Ekonomi />} />
+        <Route path="/beritaKesehatan" element={<BeritaDaerah_Kesehatan />} />
+        <Route path="/beritaPemerintahan" element={<BeritaDaerah_Pemerintahan />}/>
+        <Route path="/beritaPendidikan" element={<BeritaDaerah_Pendidikan />} />
+        <Route path="/beritaTeknologi" element={<BeritaDaerah_Teknologi />} />
+        <Route path="/layananKependudukan" element={<LayananDaerah_Kependudukan />} />
+        <Route path="/layananKesehatan" element={<LayananDaerah_Kesehatan />} />
+        <Route path="/dokumen" element={<Dokumen />} />
+        <Route path="/profil" element={<ProfilDaerah />} />
       </Routes>
       <FooterComponent />
     </div>

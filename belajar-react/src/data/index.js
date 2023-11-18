@@ -2,31 +2,95 @@ import malangCityImg from "../assets/Malang_City.png";
 import dokumenPdf from "../assets/Logo_PDF.png";
 import logoMalang from "../assets/logo_malang.png";
 
+export const popUpNav = [
+  // Menu Berita
+  {
+    id: 1,
+    no: 1,
+    buttonText: "Ekonomi",
+    path: "/beritaEkonomi",
+  },
+  {
+    id: 1,
+    no: 2,
+    buttonText: "Kesehatan",
+    path: "/beritaKesehatan",
+  },
+  {
+    id: 1,
+    no: 3,
+    buttonText: "Pemerintahan",
+    path: "/beritaPemerintahan",
+  },
+  {
+    id: 1,
+    no: 4,
+    buttonText: "Pendidikan",
+    path: "/beritaPendidikan",
+  },
+  {
+    id: 1,
+    no: 5,
+    buttonText: "Teknologi",
+    path: "/beritaTeknologi",
+  },
+
+  // Menu Layanan
+  {
+    id: 2,
+    no: 1,
+    buttonText: "Kependudukan",
+    path: "/layananKependudukan",
+  },
+  {
+    id: 2,
+    no: 2,
+    buttonText: "Kesehatan",
+    path: "/layananKesehatan",
+  },
+
+  // Menu Dokumen
+  {
+    id: 4,
+    no: 1,
+    buttonText: "Dokumen",
+    path: "/dokumen",
+  },
+
+  // Menu Profil
+  {
+    id: 5,
+    no: 1,
+    buttonText: "Profil",
+    path: "/profil",
+  },
+];
+
 export const navLinks = [
   {
     id: 1,
-    path: "kotaMalang/beritaEkonomi",
+    path: "beritaEkonomi",
     text: "Berita Daerah",
   },
   {
     id: 2,
-    path: "kotaMalang/layanan",
+    path: "layanan",
     text: "Layanan Daerah",
   },
   {
     id: 3,
-    path: "kotaMalang",
+    path: "",
     Image: malangCityImg,
     imageSize: { width: "70px", height: "70px" },
   },
   {
     id: 4,
-    path: "kotaMalang/dokumen",
+    path: "dokumen",
     text: "Dokumen",
   },
   {
     id: 5,
-    path: "kotaMalang/profil",
+    path: "profil",
     text: "Profil Daerah",
   },
 ];
@@ -640,16 +704,31 @@ export const dokumen = [
     id: 1,
     gambar: dokumenPdf,
     namaDokumen: "APBD (Anggaran Pendapatan Belanja Daerah)",
+    path : "https://malangkota.go.id/download/2023/apbd_2023/2023.0000-FINAL-KUA-APBD-TA.-2023-FIX.pdf"
   },
   {
     id: 2,
     gambar: dokumenPdf,
     namaDokumen: "IPKD (Indeks  Pengelolaan Keuangan Daerah)",
+    path : "https://malangkota.go.id/download/2023/ipkd_2023/Lembar-Opini-BPK-Tahun-2022.pdf"
   },
   {
     id: 3,
     gambar: dokumenPdf,
     namaDokumen: "LKPJ (Laporan Keterangan Pertanggungjawaban)",
+    path : "https://malangkota.go.id/download/2019/lkpj_wali_kota_malang_2019/LKPJ-2019.pdf"
+  },
+  {
+    id: 4,
+    gambar: dokumenPdf,
+    namaDokumen: "MDA (Malang Dalam Angka)",
+    path : "https://malangkota.go.id/wp-content/uploads/2015/04/Malang-Dalam-Angka-2008.pdf"
+  },
+  {
+    id: 5,
+    gambar: dokumenPdf,
+    namaDokumen: "LAKIP (Laporan Akuntabilitas Kinerja Instansi Pemerintahan)",
+    path : "https://malangkota.go.id/download/2019/lakip_kota_malang_2019/LAPORAN-KINERJA-PEMERINTAH-KOTA-MALANG-TAHUN-20191.pdf"
   },
 ];
 
@@ -678,69 +757,5 @@ export const profil = [
     judul: "Program Pembangunan Kota Malang",
     isi: '1. Menjamin Akses dan Kualitas Pendidikan, Kesehatan dan Layanan Dasar Lainnya Bagi Semua Warga. pembangunan diprioritaskan pada peningkatan kualitas sumberdaya manusia dengan meningkatkan kualitas, aksesibilitas, dan pemerataan pelayanan pendidikan dan kesehatan serta meningkatkan akses pelayanan publik dasar bagi semua warga Kota Malang. 2. Mewujudkan Kota Produktif dan Berdaya Saing Berbasis Ekonomi Kreatif, Keberlanjutan dan Keterpaduan, pembangunan diprioritaskan pada peningkatan produktivitas dan daya saing daerah serta kesejahteraan dan meningkatkan pembangunan infrastruktur dan daya dukung Kota yang terpadu dan berkelanjutan, tertib penataan ruang serta berwawasan lingkungan.',
     isi1: '3. Mewujudkan Kota yang Rukun dan Toleran Berasaskan Keberagaman dan Keberpihakan terhadap Masyarakat Rentan dan Gender, penyelenggaraan pemerintah diprioritaskan pada peningkatan kerukunan antar umat beragama dengan menjunjung tinggi keragaman budaya dan toleransi antar umat beragama dan perlindungan terhadap masyarakat rentan, penyetaraan gender, serta kerukunan sosial. 4.  Memastikan Kepuasan Masyarakat atas Layanan Pemerintah yang Tertib Hukum, Profesional dan Akuntabel, pembangunan diprioritaskan untuk mewujudkan pelaksanaan reformasi birokrasi dan kualitas, pelayanan publik yang profesional, akuntabel dan berorientasi pada kepuasan masyarakat.'
-  },
-];
-
-export const popUpNav = [
-  // Menu Berita
-  {
-    id: 1,
-    no: 1,
-    buttonText: "Ekonomi",
-    path: "kotaMalang/beritaEkonomi",
-  },
-  {
-    id: 1,
-    no: 2,
-    buttonText: "Kesehatan",
-    path: "kotaMalang/beritaKesehatan",
-  },
-  {
-    id: 1,
-    no: 3,
-    buttonText: "Pemerintahan",
-    path: "kotaMalang/beritaPemerintahan",
-  },
-  {
-    id: 1,
-    no: 4,
-    buttonText: "Pendidikan",
-    path: "kotaMalang/beritaPendidikan",
-  },
-  {
-    id: 1,
-    no: 5,
-    buttonText: "Teknologi",
-    path: "kotaMalang/beritaTeknologi",
-  },
-
-  // Menu Layanan
-  {
-    id: 2,
-    no: 1,
-    buttonText: "Kependudukan",
-    path: "kotaMalang/layananKependudukan",
-  },
-  {
-    id: 2,
-    no: 2,
-    buttonText: "Kesehatan",
-    path: "kotaMalang/layananKesehatan",
-  },
-
-  // Menu Dokumen
-  {
-    id: 4,
-    no: 1,
-    buttonText: "Dokumen",
-    path: "kotaMalang/dokumen",
-  },
-
-  // Menu Profil
-  {
-    id: 5,
-    no: 1,
-    buttonText: "Profil",
-    path: "kotaMalang/profil",
   },
 ];
