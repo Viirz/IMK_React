@@ -74,82 +74,236 @@ export const beritaTerbaru = [
 
 export const layananKependudukan = [
   {
-    id: 2,
-    nama: "AKTA CERAI",
+    id: 1,
+    nama: "KARTU KELUARGA",
     Isi: [
       {
-        judul: "PERSYARATAN KEPENGURUSAN AKTA PERCERAIAN",
-        Persyaratan: [
-          "Mengisi F-2.01.",
-          "Fotokopi Salinan putusan perceraian dari pengadilan yang telah mempunyai kekuatan hukum tetap.",
-          "Kutipan akta perkawinan asli.",
-          "KTP-el asli.",
-          "KK asli.",
+        judul: "KK BARU UNTUK PENDUDUK WNI",
+        persyaratan: [
+          "Mengisi formulir pengajuan KK (F1-01) dengan Tanda tangan kepala keluarga ",
+          "Buku nikah/kutipan akta perkawinan atau kutipan akta perceraian ",
+          "Surat keterangan pindah/surat keterangan pindah datang bagi penduduk yang pindah dalam wilayah Negara Kesatuan Republik Indonesia",
+          "Surat keterangan pindah luar negeri yang diterbitkan oleh DISDUKCAPIL kabupaten/kota bagi wni yang datang dari luar wilayah Negara Kesatuan Republik Indonesia karena pindah",
+          "Surat keterangan pengganti tanda identitas bagi penduduk rentan administrasi kependudukan",
+          "Petikan keputusan presiden tentang pewarganegaraan dan berita acara pengucapan sumpah atau pernyataan janji setia bagi penduduk WNI yang semula berkewarga negaraan asing atau petikan keputusan menteri yang menyelenggarakan urusan pemerintahan bidang hukum tentang perubahan status kewarganegaraan.",
         ],
-        catatan: [
-          "Catatan: SPTJM digunakan apabila ada ketidaksesuaian data atas permintaan pemohon.",
+        catatan: [""]
+      },
+      {
+        judul: "PENERBITAN KK KARENA PERUBAHAN DATA",
+        persyaratan: [
+          "Mengisi fomulir pengajuan KK (F1-01) dengan Tanda tangan kepala keluarga ",
+          "KK lama",
+          "Surat keterangan/bukti perubahan peristiwa kependudukan dan peristiwa penting.",
         ],
-        downloadlink: "Formulir Perceraian dapat diunduh di bawah ini:",
+        catatan: [""]
+      },
+      {
+        judul: "PENERBITAN KK KARENA HILANG ATAU RUSAK BAGI PENDUDUK WNI",
+        persyaratan: [
+          "Surat Keterangan hilang dari kepolisian atau KK yang rusak ",
+          "KTP-Elektronik",
+        ],
+        catatan: [""]
+      },
+    ],
+    namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
+    downloadLink: [
+      {
+        namaDokumen: "F1-01 formulir biodata keluarga",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2022/09/F1.01-Form-KK-fix.pdf",
+      },
+      {
+        namaDokumen: "Surat Pernyataan Belum Masuk KK Manapun",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/09/SPTJM-KK.pdf",
+      },
+      {
+        namaDokumen:
+          "F-1.04 Surat Pernyataan Tidak Memiliki Dokumen Kependudukan",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-1.04_Surat_Pernyataan_Tidak_Memiliki_Dokumen_Kependudukan.pdf",
+      },
+    ],
+  },
+  {
+    id: 2,
+    nama: "KARTU TANDA PENDUDUK",
+    Isi: [
+      {
+        judul: "KTP BARU",
+        persyaratan: [
+          "Fotocopy KK TERBITAN DUKCAPIL",
+          "Fotocopy AKTA KELAHIRAN",
+          "Bagi penduduk yang belum berusia 17 (tujuh belas) tahun namun sudah menikah atau sudah kawin atau pernah kawin, melampirkan surat nikah/akta perkawinan",
+          "Surat Pindah dalam (dalam wilayah NKRI).",
+        ],
+        catatan: [""]
+      },
+      {
+        judul: "KTP HILANG DAN RUSAK",
+        persyaratan: [
+          "Surat kehilangan dari kepolisian",
+          "Fotocopy KK TERBITAN DUKCAPIL",
+          "Membawa KTP asli untuk penggantian yang rusak.",
+        ],
+        catatan: [""]
+      },
+      {
+        judul: "PERUBAHAN KTP YANG SALAH / DIRUBAH",
+        persyaratan: [
+          "Fotocopy KK TERBITAN DUKCAPIL",
+          "Fotocopy AKTA KELAHIRAN",
+          "Fotocopy IJAZAH",
+          "Fotocopy SURAT NIKAH ATAU SURAT CERAI BAGI PERUBAHAN STATUS",
+          "Kartu Tanda Penduduk (KTP) asli",
+        ],
+        catatan: [""]
       },
     ],
   },
   {
     id: 3,
-    nama: "AKTA CERAI",
+    nama: "KARTU IDENTITAS ANAK",
     Isi: [
       {
-        judul: "PERSYARATAN KEPENGURUSAN AKTA PERCERAIAN",
-        Persyaratan: [
-          "Mengisi F-2.01.",
-          "Fotokopi Salinan putusan perceraian dari pengadilan yang telah mempunyai kekuatan hukum tetap.",
-          "Kutipan akta perkawinan asli.",
-          "KTP-el asli.",
-          "KK asli.",
+        judul: "PERSYARATAN BUAT BARU KIA",
+        persyaratan: [
+          "Prioritas usia anak O-kurang dari 17 tahun",
+          "Fotokopi Akta Kelahiran",
+          "Fotokopi KK orangtua/wali",
+          "Fotokopi KTP-el kedua orangtua",
+          " Pasfoto 2x3 (2 lembar untuk anak umur diatas 5 tahun)",
+          "Fotokopi Paspor dan KITAP (Untuk WNA)",
         ],
-        catatan: [
-          "Catatan: SPTJM digunakan apabila ada ketidaksesuaian data atas permintaan pemohon.",
+        catatan: [""]
+      },
+      {
+        judul: "PERSYARATAN KIA YANG HILANG",
+        persyaratan: [
+          "Surat Keterangan Kehilangan dari kepolisian",
+          "Fotokopi KK orangtua/wali",
         ],
-        downloadlink: "Formulir Perceraian dapat diunduh di bawah ini:",
+        catatan: [""]
+      },
+    ],
+    namaDownload: "Formulir dapat diundah di bawah ini:",
+    downloadLink: [
+      {
+        namaDokumen: "Form KIA",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2022/01/FORMULIR_KIA.pdf",
       },
     ],
   },
   {
     id: 4,
-    nama: "AKTA CERAI",
+    nama: "AKTA KELAHIRAN",
     Isi: [
       {
-        judul: "PERSYARATAN KEPENGURUSAN AKTA PERCERAIAN",
-        Persyaratan: [
+        judul: "PERSYARATAN KUTIPAN AKTA KELAHIRAN",
+        persyaratan: [
           "Mengisi F-2.01.",
-          "Fotokopi Salinan putusan perceraian dari pengadilan yang telah mempunyai kekuatan hukum tetap.",
-          "Kutipan akta perkawinan asli.",
-          "KTP-el asli.",
-          "KK asli.",
+          "Fotokopi Surat keterangan kelahiran dari rumah sakit/puskesmas/fasilitas kesehatan/dokter atau bidan.",
+          "Fotokopi Buku nikah/kutipan akta perkawinan.",
+          "Fotokopi KK orang tua dan/atau pelapor",
+          "Surat pernyataan tanggung jawab mutlak (SPTJM) atas kebenaran data, dengan diketahui oleh dua orang saksi: 5.1. Jika tidak memiliki surat keterangan kelahiran, dan/atau 5.2. Jika tidak memiliki buku nikah/kutipan akta perkawinan tetapi status hubungan dalam KK menunjukkan sebagai suami-istri.",
         ],
-        catatan: [
-        ],
-        downloadlink: "Formulir Perceraian dapat diunduh di bawah ini:",
+        catatan: [""]
       },
       {
-        judul: "PERSYARATAN KEPENGURUSAN AKTA PERCERAIAN",
-        Persyaratan: [
+        judul: "PERSYARATAN KUTIPAN AKTA KELAHIRAN YANG HILANG/RUSAK",
+        persyaratan: [
+          "Form permohonan.",
+          "Fotokopi KK pemohon.",
+          "Surat keterangan kehilangan dari kepolisian.",
+          "Fotokopi Kutipan akta kelahiran (jika ada).",
+          "Kutipan akta kelahiran yang rusak.",
+        ],
+        catatan: [""]
+      },
+      {
+        judul: "PERSYARATAN PERUBAHAN NAMA PADA KUTIPAN AKTA KELAHIRAN",
+        persyaratan: [
           "Mengisi F-2.01.",
-          "Fotokopi Salinan putusan perceraian dari pengadilan yang telah mempunyai kekuatan hukum tetap.",
-          "Kutipan akta perkawinan asli.",
-          "KTP-el asli.",
-          "KK asli.",
+          "Fotokopi Salinan penetapan pengadilan negeri.",
+          "Kutipan akta kelahiran.",
+          "Fotokopi Kartu Keluarga.",
+          "Fotokopi Dokumen perjalanan bagi orang asing.",
         ],
-        catatan: [
-          "Catatan: SPTJM digunakan apabila ada ketidaksesuaian data atas permintaan pemohon.",
+        catatan: [""]
+      },
+      {
+        judul: "PERSYARATAN PEMBETULAN KUTIPAN AKTA KELAHIRAN",
+        persyaratan: [
+          "Mengisi F-2.01.",
+          "Fotokopi Dokumen autentik yang menjadi dasar untuk pembetulan.",
+          "Kutipan akta kelahiran yang terdapat kesalahan.",
+          "Fotokopi KK pemohon.",
+          "Surat pernyataan tanggung jawab mutlak (SPTJM).",
         ],
-        downloadlink: "Formulir Perceraian dapat diunduh di bawah ini:",
+        catatan: [""]
+      },
+      {
+        judul: "PERSYARATAN PEMBATALAN KUTIPAN AKTA PENCATATAN SIPIL",
+        persyaratan: [
+          "Mengisi F-2.01.",
+          "FC. Salinan putusan pengadilan yang telah memiliki kekuatan hukum tetap.",
+          "Kutipan akta pencatatan sipil yang dibatalkan.",
+          "Fotokopi KK.",
+          "Surat pernyataan tanggung jawab mutlak (SPTJM).",
+        ],
+        catatan: [""]
+      },
+      {
+        judul: "Formulir dapat diundah di bawah ini",
+        persyaratan: [
+          "Blanko F2-01 (Isian Data Kelahiran)",
+          "Formulir Pelaporan Kelahiran",
+          "Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Data Kelahiran",
+          "Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Sebagai Pasangan Suami Isteri",
+          "Surat Pernyataan Tanggung Jawab Mutlak untuk Penerbitan Akta Pencatatan Sipil",
+        ],
+        catatan: [""]
+      },
+    ],
+    namaDownload: "Blanko Isian KK dapat di unduh dibawah ini:",
+    downloadLink: [
+      {
+        namaDokumen: "Blanko F2-01 (Isian Data Kelahiran)",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2023/05/f201-baru.pdf",
+      },
+      {
+        namaDokumen: "Formulir Pelaporan Kelahiran",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2023/05/FORMULIR-PELAPORAN-KELAHIRAN.pdf",
+      },
+      {
+        namaDokumen:
+          "Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Data Kelahiran",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.03_Surat_Pernyataan_Tanggung_Jawab_Mutlak_Kebenaran_Data_Kelahiran.pdf",
+      },
+      {
+        namaDokumen:
+          "Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Sebagai Pasangan Suami Isteri",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.04_Surat_Pernyataan_Tanggung_Jawab_Mutlak_Kebenaran_Sebagai_Pasangan_Suami_Isteri.pdf",
+      },
+      {
+        namaDokumen:
+          "Surat Pernyataan Tanggung Jawab Mutlak untuk Penerbitan Akta Pencatatan Sipil",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/09/SPTJM-CAPIL-1.pdf",
       },
     ],
   },
   {
     id: 5,
     nama: "AKTA KEMATIAN",
-    isi: [
+    Isi: [
       {
         judul: "PERSYARATAN KEPENGURUSAN AKTA KEMATIAN",
         persyaratan: [
@@ -161,8 +315,7 @@ export const layananKependudukan = [
         catatan: [
           "Catatan: SPTJM digunakan apabila ada ketidaksesuaian atas data permintaan pemohon.",
           "Berkas permohonan yang lengkap masukkan map berwarna hijau.",
-        ],
-        downloadlink: "",
+        ]
       },
       {
         judul: "PERSYARATAN KUTIPAN AKTA KEMATIAN YANG HILANG/RUSAK",
@@ -173,8 +326,7 @@ export const layananKependudukan = [
           "Fotokopi Kutipan akta kematian (jika ada).",
           "Kutipan akta kematian yang rusak.",
         ],
-        catatan: [""],
-        downloadlink: "",
+        catatan: [""]
       },
       {
         judul: "PERSYARATAN PERUBAHAN NAMA PADA KUTIPAN AKTA KEMATIAN",
@@ -185,8 +337,7 @@ export const layananKependudukan = [
           "Fotokopi Kartu Keluarga.",
           "Fotokopi Dokumen perjalanan bagi orang asing.",
         ],
-        catatan: [""],
-        downloadlink: "",
+        catatan: [""]
       },
       {
         judul: "PERSYARATAN PEMBETULAN KUTIPAN AKTA KEMATIAN",
@@ -197,8 +348,7 @@ export const layananKependudukan = [
           "Fotokopi KK pemohon.",
           "Surat pernyataan tanggung jawab mutu (SPTJM).",
         ],
-        catatan: [""],
-        downloadlink: "",
+        catatan: [""]
       },
       {
         judul: "PERSYARATAN PEMBATALAN KUTIPAN AKTA PENCATATAN SIPIL",
@@ -209,25 +359,42 @@ export const layananKependudukan = [
           "Fotokopi KK.",
           "Surat pernyataan tanggung jawab mutu (SPTJM).",
         ],
-        catatan: [""],
-        downloadlink: "",
+        catatan: [""]
       },
       {
-        judul: "Formulir dapat diunduh di bawah ini:",
+        judul: "Formulir ",
         persyaratan: [
           "Banko F2-01 Pelaporan Pencatatan Sipil di dalam wilayah NKRI",
           "SPTJM Peristiwa Kematian",
           "SPTJM untuk Penerbitan Akta Pencatatan Sipil",
         ],
-        catatan: [""],
-        downloadlink: "",
+        catatan: [""]
+      },
+    ],
+    namaDownload: "Formulir dapat diunduh di bawah ini:",
+    downloadLink: [
+      {
+        namaDokumen:
+          "Banko F2-01 Pelaporan Pencatatan Sipil di dalam wilayah NKRI",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2023/05/f201-baru.pdf",
+      },
+      {
+        namaDokumen: "SPTJM Peristiwa Kematian",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/SPTJM-kebenaran-peristiwa-kematian.pdf",
+      },
+      {
+        namaDokumen: "SPTJM untuk Penerbitan Akta Pencatatan Sipil",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/09/SPTJM-CAPIL-1.pdf",
       },
     ],
   },
   {
     id: 6,
     nama: "AKTA PERKAWINAN",
-    isi: [
+    Isi: [
       {
         judul: "PERSYARATAN KEPENGURUSAN AKTA PERKAWINAN",
         persyaratan: [
@@ -243,7 +410,14 @@ export const layananKependudukan = [
           "Catatan: SPTJM digunakan apabila ada ketidaksesuaian data atas permintaan pemohon.",
           "Berkas permohonan yang lengkap masukkan map berwarna merah.",
         ],
-        downloadlink: "Formulir Perkawinan dapat diunduh di bawah ini:",
+      },
+    ],
+    namaDownload: "Formulir dapat diunduh di bawah ini:",
+    downloadLink: [
+      {
+        namaDokumen: "Formulir Perkawinan",
+        linkDokumen:
+          "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.01_Pelaporan_Pencatatan_Sipil_di_dalam_wilayah_NKRI-2.pdf",
       },
     ],
   },
@@ -253,7 +427,7 @@ export const layananKependudukan = [
     Isi: [
       {
         judul: "PERSYARATAN KEPENGURUSAN AKTA PERCERAIAN",
-        Persyaratan: [
+        persyaratan: [
           "Mengisi F-2.01.",
           "Fotokopi Salinan putusan perceraian dari pengadilan yang telah mempunyai kekuatan hukum tetap.",
           "Kutipan akta perkawinan asli.",
@@ -263,7 +437,14 @@ export const layananKependudukan = [
         catatan: [
           "Catatan: SPTJM digunakan apabila ada ketidaksesuaian data atas permintaan pemohon.",
         ],
-        downloadlink:"Formulir Perceraian dapat diunduh di bawah ini:",
+      },
+    ],
+    namaDownload: "Formulir dapat diunduh di bawah ini:",
+    downloadLink: [
+      {
+        namaDokumen: "Formulir Perceraian",
+        linkDokumen:
+        "http://dispendukcapil.malangkota.go.id/wp-content/uploads/2021/08/F-2.01_Pelaporan_Pencatatan_Sipil_di_dalam_wilayah_NKRI-2.pdf"
       },
     ],
   },
