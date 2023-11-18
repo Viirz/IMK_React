@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 const HomePage = () => {
   return (
@@ -36,7 +36,10 @@ const HomePage = () => {
                 spaceBetween={10}
                 pagination={{
                   clickable: true,
+                  type: "bullets",
                 }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
                 breakpoints={{
                   640: {
                     slidesPerView: 2,
@@ -51,7 +54,6 @@ const HomePage = () => {
                     spaceBetween: 100,
                   },
                 }}
-                modules={[Pagination]}
                 className="mySwiper"
               >
                 {beritaTerbaru.map((data) => {
