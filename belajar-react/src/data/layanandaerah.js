@@ -31,8 +31,96 @@ export const layananKesehatan=[
     gambar : gambarSA,
     nama : "RSUD Dr Saiful Anwar"
   },
-
 ]
+
+//Kesehatan PopUp
+export const kesehatanPopup = [
+  {
+    id : 1,
+    judul : "RSUD Dr. Saiful Anwar",
+    jam : ["Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    tarif : "UMUM, BPJS, SKTM",
+    alamatWebsite : "https://rsusaifulanwar.jatimprov.go.id/",
+    alamat : "Alamat: Jl. Jaksa Agung Suprapto No.2, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65112.",
+    telepon : "(0341)-362101",
+    email : "staf-rsu-drsaifulanwar@jatimprov.go.id",
+    sosialMedia : [
+      {
+        gambar : "",
+        nama : "rssaifulanwar",
+      },
+      {
+        gambar : "",
+        nama : "rsud dr.Saiful Anwar",
+      },
+      {
+        gambar : "",
+        nama : "@rsudsaifulanwar",
+      }
+    ]
+  },
+  {
+    id : 2,
+    judul : "",
+    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    tarif : [],
+    alamatWebsite : [],
+    alamat : [],
+    telepon : [],
+    email : [],
+    sosialMedia : [
+      {
+        
+      }
+    ]
+  },
+  {
+    id : 3,
+    judul : "",
+    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    tarif : [],
+    alamatWebsite : [],
+    alamat : [],
+    telepon : [],
+    email : [],
+    sosialMedia : [
+      {
+        
+      }
+    ]
+  },
+  {
+    id : 4,
+    judul : "",
+    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    tarif : [],
+    alamatWebsite : [],
+    alamat : [],
+    telepon : [],
+    email : [],
+    sosialMedia : [
+      {
+        
+      }
+    ]
+  },
+  {
+    id : 5,
+    judul : "",
+    jam : ["Jam Operasional (Minggu, 5 November 2023)", "Senin - Kamis  (07.00 - 13.30)", "Jumat                (07.00 - 11.00)"],
+    tarif : [],
+    alamatWebsite : [],
+    alamat : [],
+    telepon : [],
+    email : [],
+    sosialMedia : [
+      {
+        
+      }
+    ]
+  }
+]
+
 
 // Layanan Kependudukan Page
 export const layananKependudukan = [
