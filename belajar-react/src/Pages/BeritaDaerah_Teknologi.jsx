@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, ListGroup } from "react-bootstrap";
-import { beritaTeknologi } from "../data/index";
+import { beritaTeknologi } from "../data/berita";
 
 const BeritaDaerah_Teknologi = () => {
   const [selectedBerita, setSelectedBerita] = useState(null);
