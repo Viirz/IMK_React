@@ -256,7 +256,7 @@
   padding-bottom: 20px;
   margin: 20px 0px;
   border-radius: 5px;
-  background-color: var(--box-color); 
+  background-color: var(--box-color);
 }
 
 .feedback-in-container p {
@@ -445,6 +445,80 @@
 }
 
 /* Layanan Kesehatan Page */
+.kesehatan-page h1 {
+  padding: 30px;
+  padding-top: 120px;
+  padding-left: 100px;
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.mySwiper {
+  padding: 20px 0px;
+}
+
+.swiper-item {
+  padding: 30px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.swiper-item img {
+  margin-bottom: 20px;
+}
+
+.content-kesehatan {
+  margin: 30px 80px;
+  padding: 35px 50px;
+  color: var(--color-text);
+  background-color: var(--navbar-color);
+  border-radius: 50px;
+  border: 3px solid var(--secondary-color);
+}
+
+.content-kesehatan h2 {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.content-kesehatan::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-kesehatan-kiri {
+  float: left;
+  width: 50%;
+  padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.content-kesehatan-kanan {
+  float: right;
+  width: 50%;
+  padding: 10px 20px;
+  background-color: var(--box-color);
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
 
 /* Dokumen Page */
 .dokumen {

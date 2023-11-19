@@ -22,27 +22,10 @@ function LayananDaerah_Kesehatan() {
     setPopupData(selectedPopupData);
     setShowPopup(true);
   };
-
-  // const handleClickOutside = (event) => {
-  //   if (
-  //     !event.target.closest(".popUpBar") &&
-  //     !event.target.closest(".textLink")
-  //   ) {
-  //     setShowPopup(false);
-  //     setPopupData([]);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener("click", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, []);
-
+  
   return (
-    <div>
-      <div style={{ height: 500 }}></div>
+    <div className="kesehatan-page">
+      <h1>Layanan Daerah Kesehatan</h1>
       <Swiper
         slidesPerView={3}
         centeredSlides={true}
@@ -58,23 +41,20 @@ function LayananDaerah_Kesehatan() {
       >
         {layananKesehatan.map((item) => (
           <SwiperSlide key={item.id}>
-            <div style={{ position: "relative", background: "black" }}>
+            <div className="swiper-item" onClick={() => handlePopupToggle(item.id)}>
               <img
                 src={item.gambar}
                 alt={item.nama}
                 style={{ width: "100%", cursor: "pointer" }}
                 onClick={() => {
                   handlePopupToggle(item.id);
-                  console.log(item.id); // Pindahkan console.log ke dalam fungsi handlePopupToggle
+                  console.log(item.id);
                 }}
               />
 
               <div
                 onClick={() => handlePopupToggle(item.id)}
                 style={{
-                  position: "absolute",
-                  bottom: 0,
-                  background: "rgba(0,0,0,0.5)",
                   color: "white",
                   width: "100%",
                   textAlign: "center",
