@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 
 import React, { useState } from 'react';
-import FeedbackComponent from './FeedbackComponent';
+import FeedbackComponent from '../Components/FeedbackComponent';
 
 const HomePage = () => {
   const [showFeedback, setShowFeedback] = useState(false);
