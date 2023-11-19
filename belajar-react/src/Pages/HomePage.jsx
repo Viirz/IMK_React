@@ -11,7 +11,15 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
+import React, { useState } from 'react';
+import FeedbackComponent from './FeedbackComponent';
+
 const HomePage = () => {
+  const [showFeedback, setShowFeedback] = useState(false);
+
+  const toggleFeedback = () => {
+    setShowFeedback(!showFeedback);
+  };
   return (
     <div className="navPadding">
       <header className="w-100 min-vh-100 homePage">
@@ -72,6 +80,8 @@ const HomePage = () => {
           </div>
         </Container>
       </div>
+      <button className="feedback-button" onClick={toggleFeedback}>KRITIK & SARAN</button>
+      {showFeedback && <FeedbackComponent closeFeedback={toggleFeedback} />}
     </div>
   );
 };
