@@ -1,3 +1,8 @@
+import tiktok from "../assets/Tiktok_Icon.png"
+import youtube from "../assets/Youtube_Icon.png"
+import facebook from "../assets/Facebook_Icon.png"
+import instagram from "../assets/Instagram_Icon.png"
+
 export const beritaTerbaru = [
     {
       id: 1,
@@ -39,3 +44,25 @@ export const beritaTerbaru = [
     },
   ];
   
+export const logoSosmed = [
+  {
+    id: 1,
+    logo: instagram,
+    link: "https://www.instagram.com/malangraya_info/"
+  },
+  {
+    id: 2,
+    logo: facebook,
+    link: "https://www.facebook.com/imr.infomalangraya"
+  },
+  {
+    id: 3,
+    logo: tiktok,
+    link: "https://www.tiktok.com/@malangraya_info"
+  },
+  {
+    id: 4,
+    logo: youtube,
+    link: "https://www.youtube.com/"
+  }
+];

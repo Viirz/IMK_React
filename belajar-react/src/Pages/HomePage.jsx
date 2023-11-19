@@ -1,5 +1,5 @@
 import { Container, Row, Col, NavLink } from "react-bootstrap";
-import { beritaTerbaru } from "../data/home";
+import { beritaTerbaru, logoSosmed } from "../data/home"; // Import the logoSosmed data
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -79,6 +79,17 @@ const HomePage = () => {
             </Row>
           </div>
         </Container>
+      </div>
+      <div className="sosmed-container">
+        <Row>
+          {logoSosmed.map((logo) => (
+            <Col key={logo.id} xs={12}>
+              <a href={logo.link} target="_blank" rel="noopener noreferrer">
+                <img src={logo.logo} alt="Social Media Logo" className="sosmed-logo" />
+              </a>
+            </Col>
+          ))}
+        </Row>
       </div>
       <button className="feedback-button" onClick={toggleFeedback}>KRITIK & SARAN</button>
       {showFeedback && <FeedbackComponent closeFeedback={toggleFeedback} />}

@@ -287,6 +287,22 @@
   cursor: pointer;
 }
 
+.sosmed-container {
+  position: absolute;
+  width: 55px;
+  top: 225px;
+  right: 0px;
+  padding: 10px 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.sosmed-container a {
+  display: block;
+  margin: 10px 0px;
+}
+
 /* Berita Page */
 .beritaPage {
   padding-top: 80px;
