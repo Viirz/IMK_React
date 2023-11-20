@@ -17,6 +17,7 @@ const ProfilDaerah = () => {
 
   return (
     <div className="layout">
+      <h1>Profil Daerah</h1>
       <div className="sidebar">
         <Card className="sidebar-card-profil" style={{ width: "100%" }}>
           <ListGroup variant="flush">
