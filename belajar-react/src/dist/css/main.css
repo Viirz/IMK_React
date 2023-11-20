@@ -340,6 +340,7 @@
 }
 
 .sidebar-item-berita {
+  margin: 10px 0px;
   border: none;
   border-radius: 25px;
   font-weight: 600;
@@ -606,23 +607,24 @@
 
 .sidebar {
   width: 30%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 20px;
   margin-left: 30px;
   margin-right: 30px;
-  background-color: var(--box-color);
+  background-color: var(--secondary-color);
   border-radius: 25px;
 }
 
 .sidebar-card-profil {
   padding-top: 10px;
   border: none;
+  background-color: var(--secondary-color);
 }
 
 .sidebar-item-profil {
   border: none;
   border-radius: 25px;
   font-weight: 600;
+  margin: 10px 0px;
 }
 
 .content-profil {
