@@ -1,6 +1,5 @@
-import React from "react";
 import { useState, useEffect } from "react";
-import { Card, ListGroup, Row, Col } from "react-bootstrap";
+import { Card, ListGroup } from "react-bootstrap";
 import { profil } from "../data/profil";
 
 const ProfilDaerah = () => {

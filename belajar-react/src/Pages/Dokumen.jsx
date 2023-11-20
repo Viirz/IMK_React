@@ -1,4 +1,3 @@
-import React from "react";
 import { dokumen } from "../data/dokumen";
 import { Link } from "react-router-dom";
 
