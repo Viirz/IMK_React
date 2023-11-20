@@ -1,4 +1,4 @@
-import { Container, Row, Col, NavLink } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { beritaTerbaru, logoSosmed } from "../data/home"; // Import the logoSosmed data
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,8 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
-import React, { useState } from 'react';
-import FeedbackComponent from '../Components/FeedbackComponent';
+import { useState } from "react";
+import FeedbackComponent from "../Components/FeedbackComponent";
 
 const HomePage = () => {
   const [showFeedback, setShowFeedback] = useState(false);
@@ -20,6 +20,7 @@ const HomePage = () => {
   const toggleFeedback = () => {
     setShowFeedback(!showFeedback);
   };
+
   return (
     <div className="navPadding">
       <header className="w-100 min-vh-100 homePage">
@@ -29,7 +30,9 @@ const HomePage = () => {
             <h1 className="judul-kedua"> - KOTA MALANG - </h1>
             <div className="search-box">
               <input type="text" placeholder="Cari..." />
-              <button type="submit">🔍</button>
+              <Link to="/beritaEkonomi">
+                <button type="submit">🔍</button>
+              </Link>
             </div>
           </div>
         </Container>
@@ -85,13 +88,19 @@ const HomePage = () => {
           {logoSosmed.map((logo) => (
             <Col key={logo.id} xs={12}>
               <a href={logo.link} target="_blank" rel="noopener noreferrer">
-                <img src={logo.logo} alt="Social Media Logo" className="sosmed-logo" />
+                <img
+                  src={logo.logo}
+                  alt="Social Media Logo"
+                  className="sosmed-logo"
+                />
               </a>
             </Col>
           ))}
         </Row>
       </div>
-      <button className="feedback-button" onClick={toggleFeedback}>KRITIK & SARAN</button>
+      <button className="feedback-button" onClick={toggleFeedback}>
+        KRITIK & SARAN
+      </button>
       {showFeedback && <FeedbackComponent closeFeedback={toggleFeedback} />}
     </div>
   );

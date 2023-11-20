@@ -1,8 +1,6 @@
-// KesehatanComponent.jsx
-import React from "react";
 import { Link } from "react-router-dom";
 
-function KesehatanComponent({ data, closePopup }) {
+function KesehatanComponent({ data }) {
   return (
     <div className="content-kesehatan">
       {data.map((popupData) => (
