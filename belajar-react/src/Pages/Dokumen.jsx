@@ -31,8 +31,8 @@ function Dokumen() {
                   src={item.gambar}
                   alt={item.namaDokumen}
                   style={{
-                    width: "100px",
-                    height: "100px",
+                    width: "60px",
+                    height: "60px",
                     marginRight: "50px",
                   }}
                 />
